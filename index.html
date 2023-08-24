@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="css/style.css" />
+
+
+  <title>web</title>
+</head>
+
+<body>
+
+  <header class="header contentGap">
+    <nav class="menu">
+      <div class="container menu__container">
+        <h1><a href="" class="logo" title="CWH's Website">CWH</a></h1>
+        <ul class="menu__link">
+          <li><a href="#" class="hvr-underline-from-left" title="about me">about me</a></li>
+          <li><a href="#" class="hvr-underline-from-left" title="my recommender">my recommender</a></li>
+          <li><a href="#" class="hvr-underline-from-left" title="my work">my work</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <div class="frame" id="scene">
+      <div class="layer" data-depth="0.1">
+        <img src="img/sky.png" alt="" class="sky">
+      </div>
+      <div class="layer" data-depth="0">
+        <img src="img/sky-ground.png" alt="" class="ground ground__bg">
+      </div>
+      <div class="layer" data-depth="0.15">
+        <img src="img/cloudy.png" alt="" class="cloudy">
+      </div>
+      <div class="layer" data-depth="0.2">
+        <img src="img/cloduy-2.png" alt="" class="cloudy__2">
+      </div>
+      <div class="layer" data-depth="0.25">
+        <img src="img/cloudy-3.png" alt="" class="cloudy__3">
+      </div>
+      <div class="layer" data-depth="0.2">
+        <img src="img/moon.png" alt="" class="moon">
+      </div>
+      <div class="layer" data-depth="0.25">
+        <img src="img/cloudy-s.png" alt="" class="cloudy__small">
+      </div>
+
+      <div class="layer" data-depth="0.2">
+        <img src="img/stars.png" alt="" class="stars">
+      </div>
+
+      <!-- far mountain -->
+      <div class="layer" data-depth="0.2">
+        <img src="img/mountain-2.png" alt="" class="ground ground__mt3">
+      </div>
+      <div class="layer" data-depth="0.25">
+        <img src="img/ground-3.png" alt="" class="ground">
+      </div>
+
+      <div class="layer" data-depth="0.2">
+        <img src="img/ground-2.png" alt=" " class="ground">
+      </div>
+      <div class="layer" data-depth="0.1">
+        <img src="img/mountain.png" alt="" class="ground">
+      </div>
+
+      <div class="layer" data-depth="0.05">
+        <img src="img/ground-1.png" alt=" " class="ground">
+      </div>
+
+
+      <div class="layer" data-depth="0.5">
+        <div class="hero">
+          <h2>
+            <div>hello I'm</div>
+            <div>Chen Wei He</div>
+          </h2>
+          <h3>I’m a front-end engineer and designer, looking for work around the world. </h3>
+          <a href="#" class="btn btn--primary margin-b--b" title="Get to know me">Get to know me</a>
+          <a href="#" class="btn btn--sub" title="Contact me">Contact me</a>
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+  <main class="main">
+    <div class="movieArea container">
+      <div class="main__content">
+        <h4 class="contentTitle">about me</h4>
+        <div class="main__content__box">
+          <div class="main__content__img">
+            <img src="img/glasses.png" alt="" class="glasses">
+
+            <div class="pixelart-to-css"></div>
+            <canvas id="canvas1" class="canvas"></canvas>
+            <div class="canvas__controls">
+              <label for="animations">Choose Action:</label>
+              <select name="animations" id="animations">
+                <option value="walk">Walk</option>
+                <option value="idle">Idle</option>
+                <option value="jump">Jump</option>
+                <option value="attack">Attack</option>
+                <option value="defense">Defense</option>
+                <option value="injuried">Injuried</option>
+                <option value="die">Die</option>
+                <option value="trick">Trick</option>
+              </select>
+            </div>
+          </div>
+          <div class="main__content__info">
+            Hello, My name is Chen Wei He.<br><br>
+            I am an experienced web engineer with proficiency in HTML5, CSS3, Sass,
+            JavaScript, jQuery, Git and CSS frameworks such as Bootstrap.
+            <br><br>I possess strong skills in translating UI/UX
+            mock-ups into responsive interfaces that work seamlessly across cross-browser, desktop, mobile, and tablet
+            environments, and am knowledgeable in design thinking, usability principles, and accessibility
+            guidelines.<br><br>
+            My experience with Figma and Adobe XD has honed my prototyping skills, and I am also skilled in building
+            reusable code and libraries. Additionally, I excel in teamwork and team-building.
+
+
+
+            <ul class="main__content__link">
+              <li><a href="https://medium.com/@peaceful_oxblood_woodchuck_486" title="medium" target="_blank"><i
+                    class="fa-brands fa-medium"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/chen-wei-he-910806b7" title="linkedin" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+
+          </div>
+          <div class="main__content__work main__content__info">
+            <h3 class="contentTitle--h3">work experience</h3>
+            <div class="workExperience">
+              <div>Blue Planet Inc</div>
+              <div>Taipei,TW</div>
+              <div>Front-end Engineer</div>
+              <div>Jul 2020-Present</div>
+              <ul>
+                <li>Served as the on-site engineer for the Information Department of Taipei’s City Government.</li>
+                <li>Assisted in setting up websites of bureaus and departments, e.g., Taipei Zoo, Dept. of Social
+                  Welfare, Dept. of Rapid Transit Systems, Dept. of Health, Dept. of Urban Development, Research,
+                  Development and Evaluation Commission.
+                </li>
+                <li>Improved the accessibility testing process of the websites of the Taipei City Government and the
+                  Information Department, increased the improvement rate and shortened the process time.
+                </li>
+
+                <li>Created and designed reusable visual components with HTML5/CSS3/Sass with responsive layout for
+                  TaipeiPass app.
+                </li>
+
+                <li>Maintained websites, improving through UX and accessibility features.
+                </li>
+                <li>Provided customer service for the website (addressing service tickets).
+                </li>
+                <li>Collaborated with UI/UX designers by using Zeplin, Adobe XD.
+                </li>
+                <li>Designed website’s wireframe and prototype using Figma.
+                </li>
+              </ul>
+            </div>
+            <button title="read More" class="readMore hvr-underline-from-center" id="toggleBtn">
+              <img src="img/arrowDown.png" alt=" ">
+              Read More
+            </button>
+            <div id="content" class="close">
+              <div class="workExperience">
+                <div>Honghwa International Corp</div>
+                <div>Taipei,TW</div>
+                <div>Front-end Engineer</div>
+                <div>Jan 2019 – Jul 2020</div>
+                <ul>
+                  <li>Served as the on-site engineer for the Information Department of Taipei’s City Government.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="workExperience">
+                <div>Self-employed</div>
+                <div>Taipei,TW</div>
+                <div>Freelance Web Developer</div>
+                <div>Jan 2017 – Apr 2018</div>
+                <ul>
+                  <li>Delivered web development projects using HTML, CSS, Javascript, and Wordpress.</li>
+                </ul>
+              </div>
+
+              <div class="workExperience">
+                <div>Siloah Travel Co., Ltd</div>
+                <div>Taipei,TW</div>
+                <div>Website Developer</div>
+                <div>Apr 2016 – Nov 2016</div>
+                <ul>
+                  <li>Planned and designed website using HTML, CSS, Javascript, and Wordpress.
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="blockArt">
+      <canvas id="canvas2" class="blockArt__canvas"></canvas>
+      <img src="/img/run.gif" class="blockArt__canvas--run">
+    </div>
+
+    <div class="myRecommender">
+      <h4 class="contentTitle"> recommender</h4>
+      <div class="cardGroup container">
+
+        <div class="twoCard">
+          <!-- 正面 -->
+          <div class="front">
+            <div class="backImg__shadow">
+              <div class="backImg__round">
+                <div class="backImg">
+                </div>
+              </div>
+            </div>
+
+            <span class="backTitle">Flop & check</span>
+          </div>
+          <!-- 背面 -->
+          <div class="card">
+            <p class="card__name card__name--1">Eric Mu
+            </p>
+            <div class="card__img">
+              <img src="/img/ericmu.jpg" alt="Eric Mu">
+            </div>
+
+
+            <p class="card__title">TBSA <br>Former deputy secretary-general</p>
+            <p class="card__content">Chen Wei joined the association as an intern at university, and supported marketing
+              projects on campus promotion. He is a good student who is willing to cooperate with others and share his
+              experience. I believe he is a very worthy person to be recommended.</p>
+          </div>
+
+        </div>
+        <div class="twoCard">
+          <!-- 正面 -->
+          <div class="front">
+            <div class="backImg__shadow">
+              <div class="backImg__round">
+                <div class="backImg">
+                </div>
+              </div>
+            </div>
+
+            <span class="backTitle">Flop & check</span>
+          </div>
+          <div class="card">
+
+            <p class="card__name card__name--2">Mark Lee</p>
+            <div class="card__img">
+              <img src="/img/marklee.jpg" alt="Mark Lee">
+            </div>
+
+
+            <p class="card__title">Associate Professor In IM At Ming Chuan University</p>
+            <p class="card__content">Chen Wei was a respectful student and has accomplished everything he sets his mind
+              to. As my student, he told me he wanted to learn how to design web pages, travel abroad, and work for a
+              web
+              design company. Check, check, check. It is encouraging to see someone begin to accomplish their dreams at
+              such a young age.</p>
+          </div>
+        </div>
+        <div class="twoCard">
+          <!-- 正面 -->
+          <div class="front">
+            <div class="backImg__shadow">
+              <div class="backImg__round">
+                <div class="backImg">
+                </div>
+              </div>
+            </div>
+
+            <span class="backTitle">Flop & check</span>
+          </div>
+          <div class="card">
+
+            <p class="card__name card__name--3">Max Chen</p>
+            <div class="card__img">
+              <img src="/img/maxchen.jpg" alt="Max Chen">
+            </div>
+
+
+            <p class="card__title">Assistant Professor in IM at Ming Chuan University</p>
+            <p class="card__content">I first met Chen Wei when he took my Information Architecture & Web Design course
+              at
+              MCU. He showed great aspiration in and out of class, was eager to learn, and dared to follow his dream.
+              Chen
+              Wei is the kind of person I’d love to work with professionally.</p>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+    <div class="blockArt rotate">
+
+      <div class="chessBoard">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="myWork">
+
+      <div class="machine container">
+        <div class="machine__head">
+          <h4 class="machine__head__title">
+            <span class="first">My</span>
+            <img src="img/rocket.png" alt="moon" class="machine__head__img"><span class="second">Work</span>
+          </h4>
+        </div>
+        <div class="machine__body">
+          <div class="machine__body__screen">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <div class="mySlides__info">
+                  <h5 class="mySlides__info__title">work projects.</h5>
+                  <h6 class="mySlides__info__subTitle">Served as the on-site engineer for the Information Department of
+                    Taipei’s City Government.</h6>
+                  <p class="mySlides__info__date">Jul 2020-Present</p>
+                  <p>Use programming languages ​​and the official systems to build websites and use the following
+                    techniques to increase visual diversity, such as website planning, UX design,
+                    accessibility
+                    design, HTML, CSS, Sass, JavaScript, jQuery, Zeplin, Adobe XD.</p>
+                  <div class="mySlides__info__content small">
+                    <p class="online">Online</p>
+                    <ul>
+                      <li>
+                        <a href="https://id.taipei/tpcd/" target="_blank" rel="noopener noreferrer"
+                          title="TaipeiPass[Mandarin]">TaipeiPass</a> application website page interface and components
+                      </li>
+                      <li><a href="https://dome.gov.taipei/" target="_blank" rel="noopener noreferrer"
+                          title="Taipei Dome Office official website[Mandarin]">Taipei
+                          Dome Office official website</a></li>
+                      <li><a href="https://housingjustice.gov.taipei/" target="_blank" rel="noopener noreferrer"
+                          title="Housing Justice Office official website[Mandarin]">Housing Justice Office official
+                          website</a></li>
+
+                      <li><a href="https://webconference.gov.taipei/" target="_blank" rel="noopener noreferrer"
+                          title="Remote Office official website[Mandarin]">Remote
+                          Office official website</a></li>
+                      <li><a href="https://civil.gov.taipei/" target="_blank" rel="noopener noreferrer"
+                          title="Taipei Civic Participation official website[Mandarin]">Taipei Civic Participation
+                          official website</a>
+                      </li>
+                      <li>Taipei City Government Remote Office VPN System official website - UI/UX design</li>
+                      <li>GEAF official website</li>
+
+                    </ul>
+                    <p class="offline">Offline</p>
+                    <ul>
+                      <li>Two versions of Housing Justice official websites</li>
+                      <li>Mandarin and English versions of Taipei City Government’s COVID-19 Epidemic
+                        Prevention SOPs websites
+                      </li>
+                      <li>2021, 2022 Taipei Mayor's Cup Data Application Hackathon official websites</li>
+                      <li>MRT TOD zone official website</li>
+                      <li>Mandarin and English versions of MycodePlus official website</li>
+                    </ul>
+                  </div>
+
+
+
+                </div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <div class="mySlides__info">
+                  <h5 class="mySlides__info__title">Side Projects.</h5>
+                  <br>
+                  <div class="mySlides__info__content big">
+                    <h6 class="mySlides__info__subTitle">
+                      <a href="https://robinhetw.github.io/psychologicalTest/index.html?fbclid=IwAR07X19SsJvxz1a04PhzKmvYq_nPjw5VkVgwWWHYQwgiSxR6ApR9BemCaQA"
+                        target="_blank" rel="noopener noreferrer"
+                        title="Adult children psychological test[Mandarin]">Adult children
+                        psychological
+                        test</a>
+                    </h6>
+                    <p class="mySlides__info__subTitle__content">It's a psychometric test for emotionally immature
+                      parents
+                      and children, using Figma, , Bootstrap, HTML, CSS, Sass, JavaScript, angular, Chart.js.</p>
+
+                    <h6 class="mySlides__info__subTitle">
+                      <a href="https://robinhetw.github.io/quickQuestion/index.html" target="_blank"
+                        rel="noopener noreferrer" title="Quick Quiz">Quick Quiz</a>
+                    </h6>
+                    <p class="mySlides__info__subTitle__content">A quiz game using HTML, CSS, Sass, JavaScript and
+                      connecting
+                      with TriviaAPI.</p>
+                    <h6 class="mySlides__info__subTitle">
+                      <a href="https://robinhetw.github.io/iiiproject/" target="_blank" rel="noopener noreferrer"
+                        title=" Town Tongue Design">Town Tongue Design</a>
+                    </h6>
+                    <p class="mySlides__info__subTitle__content">The official website was jointly developed and still in
+                      production, using HTML, CSS, Sass, JavaScript and jQuery.</p>
+
+                    <h6 class="mySlides__info__subTitle">
+                      <a href="https://robinhetw.github.io/Tip-calculator/" target="_blank" rel="noopener noreferrer"
+                        title="Tip Calculator">Tip Calculator</a>
+                    </h6>
+                    <p class="mySlides__info__subTitle__content">It's a tip calculator, using HTML, CSS, Sass,
+                      JavaScript and angular.</p>
+
+                    <h6 class="mySlides__info__subTitle">
+                      <a href="https://robinhetw.github.io/Pig-Game-Vision-2-/" target="_blank"
+                        rel="noopener noreferrer" title="Pig Game">Pig Game</a>
+                    </h6>
+                    <p class="mySlides__info__subTitle__content">It's a dice game, using HTML, CSS, Sass,
+                      JavaScript and angular.</p>
+
+
+                    <h6 class="mySlides__info__subTitle">
+                      <a href="https://robinhetw.github.io/hiker2/" target="_blank" rel="noopener noreferrer"
+                        title="Hiker official website">Hiker official website</a>
+                    </h6>
+                    <h6 class="mySlides__info__subTitle">
+                      <a href="https://robinhetw.github.io/Natours/" target="_blank" rel="noopener noreferrer"
+                        title="Natours official website">Natours official website</a>
+                    </h6>
+                    <h6 class="mySlides__info__subTitle">
+                      <a href="https://robinhetw.github.io/Omnifood/" target="_blank" rel="noopener noreferrer"
+                        title="Omnifood official website">Omnifood official website</a>
+                    </h6>
+                    <p class="mySlides__info__subTitle__content">These are fictitious branded company websites , using
+                      HTML,
+                      CSS, Sass, JavaScript and jQuery.</p>
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <div class="mySlides__info">
+                  <h5 class="mySlides__info__title">visual design projects.</h5>
+                  <br>
+                  <div class="mySlides__info__content big">
+                    <figure>
+                      <img src="img/7-small.jpg" class="mySlides__info__img">
+                      <figcaption class=" mySlides__info__subTitle">The first prize of Ming Chuan University Totem
+                        Design Competition
+                        <p class="mySlides__info__date">2011</p>
+                      </figcaption>
+                    </figure>
+
+                    <figure>
+                      <img src="img/8-small.jpg" class="mySlides__info__img">
+                      <figcaption class="mySlides__info__subTitle">Freelance visual design project for Ming Chuan
+                        University.<p class="mySlides__info__date">2011</p>
+                      </figcaption>
+                    </figure>
+
+
+
+
+
+
+                  </div>
+
+
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="machine__footer">
+          <div class="mySlides__controller">
+            <!-- Next and previous buttons -->
+            <button class="prev" onclick="plusSlides(-1)" aria-label="pre">&#10094;</button>
+
+            <div class="dotGroup">
+              <button class="dotGroup__dot" onclick="currentSlide(1)" aria-label="page 1"></button>
+              <button class="dotGroup__dot" onclick="currentSlide(2)" aria-label="page 2"></button>
+              <button class="dotGroup__dot" onclick="currentSlide(3)" aria-label="page 3"></button>
+            </div>
+
+            <button class="next" onclick="plusSlides(1)" aria-label="next">&#10095;</button>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">Copyright © 2023 by Chen Wei He. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="js/jstest.js"></script>
+
+</body>
+
+</html>
