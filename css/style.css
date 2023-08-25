@@ -334,7 +334,7 @@ h3 {
   content: " ";
   display: block;
   height: 55px;
-  background-image: url("/img/landscape.png");
+  background-image: url("bg/landscape.png");
   overflow: hidden;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -342,7 +342,7 @@ h3 {
 
 .main__content {
   padding: 2rem 2.4rem 2.4rem 2.4rem;
-  background: url("/img/bg-2.png") repeat 0 0;
+  background: url("bg/bg-2.png") repeat 0 0;
   border: 5px solid #c8400a;
   box-shadow: -10px 0 0 0 #822a15, 10px 0 0 0 #822a15, 0 -10px 0 0 #822a15, 0 10px 0 0 #822a15;
   border-bottom-left-radius: 50px;
@@ -354,7 +354,7 @@ h3 {
     padding: 1.6rem 0; }
   .main__content__img {
     border: 5px solid #822a15;
-    background-image: url("/img/0.jpg");
+    background-image: url("bg/0.jpg");
     background-size: cover auto;
     background-position: top center;
     border-top-left-radius: 20%;
@@ -463,9 +463,8 @@ button.readMore {
     background-color: white; }
 
 .movieArea {
-  /* padding: 266px 0 62px; */
   height: 100%;
-  background: url("/img/bg-4.png") repeat 0 0;
+  background: url("bg/bg-4.png") repeat 0 0;
   animation: bgAnimation 80s infinite linear;
   background-size: 90px;
   border-bottom-left-radius: 50px;
@@ -484,14 +483,6 @@ button.readMore {
     transform: translateY(0px); }
   100% {
     transform: translateY(-4px); } }
-
-.borderImage {
-  border-image-slice: 135 140 187 142;
-  border-image-width: 20px 61px 20px 20px;
-  border-image-outset: 0px 0px 0px 0px;
-  border-image-repeat: stretch stretch;
-  border-style: solid;
-  border-image-source: url("/img/border-g.jpg"); }
 
 .close {
   display: none; }
@@ -573,14 +564,14 @@ button.readMore {
   width: inherit;
   height: 100%;
   border-radius: 6px;
-  background: url("/img/bg-ground.jpg") repeat 0 0;
+  background: url("bg/bg-ground.jpg") repeat 0 0;
   background-size: 30px;
   border: 6px ridge #822a15;
   padding: 24px; }
   .front .backImg {
     width: inherit;
     height: inherit;
-    background: url("/img/jasontomlee-2-17-fire-final-1920x.gif") no-repeat;
+    background: url("bg/jasontomlee-2-17-fire-final-1920x.gif") no-repeat;
     background-color: #120e0a;
     background-size: 180%;
     background-position: center bottom;
@@ -593,13 +584,13 @@ button.readMore {
       width: inherit;
       height: inherit;
       padding: 35px;
-      background: url("/img/bg-2.png") repeat;
+      background: url("bg/bg-2.png") repeat;
       background-size: 30px;
       clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%); }
   .front .backTitle {
     position: absolute;
     z-index: 99;
-    background: url("/img/bg-2.png") repeat;
+    background: url("bg/bg-2.png") repeat;
     background-size: 30px;
     font-family: "Press Start 2P", cursive;
     color: white;
@@ -625,7 +616,7 @@ button.readMore {
   min-height: 100%;
   border: 6px ridge #822a15;
   border-radius: 6px;
-  background: url("/img/bg-ground.jpg") repeat 0 0;
+  background: url("bg/bg-ground.jpg") repeat 0 0;
   background-size: 30px;
   padding: 8px;
   display: grid;
@@ -658,7 +649,7 @@ button.readMore {
     border: 6px ridge #822a15; }
     .card__name::before {
       display: inline-block;
-      background-image: url("/img/groupNm.png");
+      background-image: url("bg/groupNm.png");
       background-size: cover;
       padding: 13px;
       text-shadow: 4px 2px 1px #333;
@@ -684,7 +675,7 @@ button.readMore {
 .chessBoard {
   width: inherit;
   height: 100%;
-  background: url("/img/pink-pixelated.jpg") repeat 0 0;
+  background: url("bg/pink-pixelated.jpg") repeat 0 0;
   background-size: 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -703,10 +694,10 @@ button.readMore {
     translate: -50% -50%;
     rotate: -45deg; }
   .chessBoard::before {
-    background-image: url("/img/chess_b.png");
+    background-image: url("bg/chess_b.png");
     animation: chessAnimation 8s infinite step-start; }
   .chessBoard::after {
-    background-image: url("/img/chess_w.png");
+    background-image: url("bg/chess_w.png");
     left: 83.33333%;
     top: 83.33333%;
     animation: chessAnimation-w 8s infinite step-start;
@@ -796,7 +787,7 @@ button.readMore {
     border-radius: 20px; }
   .machine__head {
     text-align: center;
-    background-image: url(/img/galaxy-3608029_1920.jpg); }
+    background-image: url(bg/galaxy-3608029_1920.jpg); }
     .machine__head__img {
       width: 70px;
       filter: drop-shadow(3px 3px 0px white) drop-shadow(3px 3px 0px #0e0788) drop-shadow(3px 3px 0px white);
@@ -813,7 +804,7 @@ button.readMore {
       box-shadow: #555bff 0px 0px 0px 5px, #1fc11b 0px 0px 0px 10px, #ffd913 0px 0px 0px 15px, #ff9c55 0px 0px 0px 20px, #ff5555 0px 0px 0px 25px, #272727 0px 0px 15px 35px; }
       .machine__head__title::before {
         content: "";
-        background-image: url(/img/moon.png);
+        background-image: url(bg/moon.png);
         background-repeat: no-repeat;
         background-size: cover;
         width: 145px;
@@ -836,7 +827,7 @@ button.readMore {
         transform: skewX(-20deg); }
         .machine__head__title .first::before {
           content: "";
-          background-image: url(/img/Star_Core.webp);
+          background-image: url(bg/Star_Core.webp);
           width: 30px;
           height: 30px;
           display: inline-block;
@@ -849,14 +840,14 @@ button.readMore {
     margin: 0 16px;
     border-top: none;
     border-bottom: none;
-    background-image: url(/img/stars-1845852_1920.jpg); }
+    background-image: url(bg/pexels-philippe-donn-1169754.jpg); }
     .machine__body__screen {
       border-radius: 20px;
       overflow: hidden;
       height: 480px;
       width: 100%; }
   .machine__footer {
-    background-image: url(/img/stars-1845852_1920.jpg); }
+    background-image: url(bg/pexels-philippe-donn-1169754.jpg); }
 
 /* Slideshow container */
 .slideshow-container {
@@ -950,11 +941,11 @@ button.readMore {
       .mySlides__info__content .offline + ul {
         color: #999; }
   .mySlides:nth-child(1) {
-    background-image: url(/img/bg__4.gif); }
+    background-image: url(bg/bg__4.gif); }
   .mySlides:nth-child(2) {
-    background-image: url(/img/bg_darksky.gif); }
+    background-image: url(bg/bg_darksky.gif); }
   .mySlides:nth-child(3) {
-    background-image: url(/img/bg__6.gif); }
+    background-image: url(bg/bg__6.gif); }
   .mySlides__controller {
     position: relative;
     display: flex;
@@ -972,7 +963,7 @@ button.readMore {
 .next {
   cursor: pointer;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.8rem;
   user-select: none;
   width: 70px;
   height: 50px;
@@ -980,7 +971,7 @@ button.readMore {
   text-align: center;
   color: white;
   background-color: #ffb900;
-  border: 2px solid #ffb900;
+  border: 8px double #c8400a;
   position: relative;
   top: 0;
   transition: all 300ms ease-in-out;
