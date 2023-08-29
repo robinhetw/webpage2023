@@ -45,7 +45,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  transition: all 0.5s; }
 
 *,
 *::after,
@@ -64,6 +65,42 @@ body {
 
 .justifySBetween {
   justify-content: space-between; }
+
+.dark-mode {
+  background-color: #122c41; }
+  .dark-mode .menu__link li a {
+    color: white; }
+  .dark-mode .menu__link li .hvr-underline-from-left:before {
+    background-color: white; }
+  .dark-mode .machine__head,
+  .dark-mode .machine__body,
+  .dark-mode .machine__footer {
+    border: 20px double #ffffff; }
+  .dark-mode .footer__text {
+    color: white; }
+
+.modeBtn {
+  position: sticky;
+  left: 95%;
+  bottom: 50%;
+  border: 4px double #ffb900;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  transition: all 0.3s;
+  opacity: 0.6;
+  font-size: 1.6rem;
+  color: #ffb900;
+  background-color: #25224a;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .modeBtn:hover {
+    opacity: 1; }
+  .modeBtn.dark {
+    background-color: #822a15; }
 
 .contentTitle {
   font-family: "Press Start 2P", cursive;
@@ -167,7 +204,7 @@ h3 {
 .hero {
   position: absolute;
   left: 50%;
-  top: 35%;
+  top: 47%;
   transform: translate(-50%, -50%);
   width: 80%;
   text-align: center; }
@@ -308,32 +345,40 @@ h3 {
     text-align: center;
     color: #999;
     font-size: 1rem;
-    font-family: "Press Start 2P", cursive; }
-
-.menu {
-  background-color: #fff; }
-  .menu__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.8rem 0; }
-  .menu__link {
-    list-style: none;
-    text-transform: uppercase;
     font-family: "Press Start 2P", cursive;
-    padding-inline-start: 0px; }
-    .menu__link li {
-      display: inline-block; }
-      .menu__link li:not(:last-child) {
-        margin-right: 1.6rem; }
-      .menu__link li a {
-        text-decoration: none;
-        color: #25224a;
-        display: inline-block;
-        padding: 6px 8px;
-        transition: all 0.3s; }
-      .menu__link li .hvr-underline-from-left:before {
-        background-color: #25224a; }
+    line-height: 1.5rem;
+    transition: all 0.3s; }
+    .footer__text a {
+      color: inherit; }
+      .footer__text a i {
+        translate: 0px -2px;
+        margin-left: 10px; }
+      .footer__text a:hover {
+        text-decoration: none; }
+
+.menu__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0; }
+
+.menu__link {
+  list-style: none;
+  text-transform: uppercase;
+  font-family: "Press Start 2P", cursive;
+  padding-inline-start: 0px; }
+  .menu__link li {
+    display: inline-block; }
+    .menu__link li:not(:last-child) {
+      margin-right: 1.6rem; }
+    .menu__link li a {
+      text-decoration: none;
+      color: #25224a;
+      display: inline-block;
+      padding: 6px 8px;
+      transition: all 0.3s; }
+    .menu__link li .hvr-underline-from-left:before {
+      background-color: #25224a; }
 
 .main::before {
   content: " ";
@@ -346,19 +391,20 @@ h3 {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; }
 
 .main__content {
-  padding: 2rem 2.4rem 2.4rem 2.4rem;
-  background: url("bg/bg-2.png") repeat 0 0;
-  border: 8px groove #c8400a;
+  border: 6px ridge #c8400a;
   border-radius: 20px;
+  padding: 2rem 2.4rem 2.4rem 2.4rem;
+  background: repeat url("bg/bg-2.png");
+  background-size: 70px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; }
   .main__content__box {
     display: grid;
     grid-template-columns: 250px 1fr;
     gap: 1.6rem;
     padding: 1.6rem 0; }
-  .main__content__img, .main__content__info {
+  .main__content__img, .main__content__info, .main__content__content {
     border: 6px ridge #c8400a;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: black; }
   .main__content__img {
     background-image: url("bg/robin.jpg");
@@ -451,12 +497,10 @@ button.readMore {
   color: white;
   text-align: center;
   display: block;
-  text-decoration: none;
-  font-family: "Press Start 2P", cursive;
-  font-size: 1rem;
+  font-family: "Press Start 2P", cursive !important;
+  font-size: 1rem !important;
   transition: 0.3s all;
   padding: 4px;
-  width: 130px;
   margin: 0 auto; }
   .readMore img {
     margin: 0 auto 1.2rem auto;
@@ -498,8 +542,8 @@ button.readMore {
   transform: scale(0.4);
   animation: heartMove 1s infinite alternate ease-in-out;
   position: absolute;
-  top: 10px;
-  left: 10px; }
+  top: 0px;
+  left: 0px; }
 
 @keyframes heartMove {
   0% {
