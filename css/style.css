@@ -54,7 +54,7 @@ body {
   box-sizing: inherit; }
 
 .container, .main::before {
-  max-width: 96.6rem;
+  max-width: 96rem;
   padding-left: 12px;
   padding-right: 12px;
   margin-left: auto;
@@ -81,6 +81,7 @@ body {
 
 .modeBtn {
   position: sticky;
+  z-index: 999999;
   left: 95%;
   bottom: 50%;
   border: 4px double #ffb900;
@@ -339,7 +340,6 @@ h3 {
     transform: translateX(10px); } }
 
 .footer {
-  padding-top: 24px;
   padding-bottom: 24px; }
   .footer__text {
     text-align: center;
@@ -593,7 +593,7 @@ button.readMore {
 .cardGroup {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 20px;
   padding: 46px 12px; }
 
 .twoCard {
@@ -834,7 +834,8 @@ button.readMore {
     border-radius: 20px; }
   .machine__head {
     text-align: center;
-    background-image: url(bg/galaxy-3608029_1920.jpg); }
+    background-image: url(bg/galaxy-3608029_1920.jpg);
+    padding: 24px 40px; }
     .machine__head__img {
       width: 70px;
       filter: drop-shadow(3px 3px 0px white) drop-shadow(3px 3px 0px #0e0788) drop-shadow(3px 3px 0px white);
@@ -1089,4 +1090,175 @@ button.readMore {
     opacity: 1; } }
 
 /* 平板  */
+@media only screen and (max-width: 1024px) {
+  .container, .main::before {
+    margin-left: 12px;
+    margin-right: 12px; } }
+
+@media only screen and (max-width: 930px) {
+  .front .backTitle {
+    padding: 10px 12px; } }
+
+@media only screen and (max-width: 800px) {
+  .hero h3 {
+    width: 100%; }
+  .frame {
+    margin: 20px 12px; }
+  .container, .main::before,
+  .main::before {
+    margin-left: 12px;
+    margin-right: 12px; }
+  .cardGroup {
+    display: flex;
+    gap: 50px 5%;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center; }
+  .twoCard {
+    flex-basis: 45%; }
+  .mySlides__info {
+    width: 90%; } }
+
+@media only screen and (max-width: 680px) {
+  .hero h2 {
+    font-size: 4.5rem;
+    line-height: 7rem;
+    margin-bottom: 2.4rem; }
+  .hero h3 {
+    font-size: 1.8rem;
+    line-height: 2.8rem; }
+  .movieArea {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; }
+  .movieArea,
+  .main__content {
+    padding: 1.4rem 1.6rem; }
+  .main__content {
+    border-radius: 15px; }
+    .main__content__info {
+      padding: 1.6rem; } }
+
+@media only screen and (max-width: 630px) {
+  .hero h2 {
+    font-size: 4rem;
+    line-height: 6rem; }
+  .twoCard {
+    flex-basis: 55%; }
+  .main__content__box {
+    grid-template-columns: 1fr; }
+  .main__content__img {
+    width: 250px;
+    margin: 10px auto; }
+  .main__content__info {
+    grid-column-start: 1;
+    grid-column-end: 3; }
+  .machine__head, .machine__body, .machine__footer {
+    border-width: 14px;
+    padding: 14px; }
+  .machine__head {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px; }
+    .machine__head__title {
+      font-size: 4rem; }
+  .machine__body {
+    margin: 0; }
+  .machine__footer {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px; }
+  .mySlides__info {
+    width: 95%; }
+  .numbertext {
+    padding: 8px; } }
+
+@media only screen and (max-width: 570px) {
+  .hero h2 {
+    font-size: 3.5rem;
+    line-height: 5rem; }
+  .hero h3 {
+    font-size: 1.6rem;
+    line-height: 2.4rem; }
+  .btn {
+    font-size: 1.6rem; }
+  .machine__head__title {
+    font-size: 3.8rem;
+    margin: 2.6rem auto;
+    border: 2px inset white;
+    border-radius: 30px;
+    padding: 20px 10px;
+    box-shadow: #555bff 0px 0px 0px 2px, #1fc11b 0px 0px 0px 5px, #ffd913 0px 0px 0px 10px, #ff9c55 0px 0px 0px 15px, #ff5555 0px 0px 0px 20px, #272727 0px 0px 15px 30px; }
+  .mySlides__controller {
+    width: 100%; } }
+
+@media only screen and (max-width: 510px) {
+  .hero h2 {
+    font-size: 3.3rem;
+    line-height: 4.5rem; }
+  .hero h3 {
+    line-height: 2rem; }
+  .twoCard {
+    flex-basis: 70%; }
+  .machine__head__title {
+    font-size: 3.2rem; }
+  .machine__body__screen {
+    height: 520px; }
+  .movieArea,
+  .main__content {
+    padding: 1.2rem 1rem; } }
+
+@media only screen and (max-width: 480px) {
+  .hero h2 {
+    font-size: 3rem;
+    line-height: 4rem; }
+  .hero h3 {
+    line-height: 1.8rem; } }
+
+@media only screen and (max-width: 460px) {
+  .machine__head__title {
+    font-size: 2.8rem; }
+  .twoCard {
+    flex-basis: 80%; }
+  .mySlides__controller {
+    gap: 16px; } }
+
+@media only screen and (max-width: 430px) {
+  .hero h2 {
+    font-size: 2.8rem;
+    line-height: 3.6rem; }
+  .machine__head__title {
+    font-size: 2.6rem; }
+  .machine__head__title::before {
+    scale: 0.7; }
+  .machine__head__img {
+    width: 50px; }
+  .machine__head__title .first::before {
+    width: 20px;
+    height: 20px;
+    translate: 3px -20px; }
+  .machine__head, .machine__body, .machine__footer {
+    border-width: 10px;
+    padding: 8px; } }
+
+@media only screen and (max-width: 400px) {
+  .hero h2 {
+    font-size: 2.6rem;
+    line-height: 3.2rem; }
+  .blockArt {
+    width: 260px;
+    height: 260px; }
+  .twoCard {
+    flex-basis: 90%; }
+  .blockArt__canvas--run {
+    width: 160px; }
+  .chessBoard::before, .chessBoard::after {
+    width: 40px;
+    height: 40px; }
+  .myWork {
+    padding-top: 16px; }
+  .prev,
+  .next {
+    font-size: 1rem;
+    width: 50px; }
+  .machine__body__screen {
+    height: 550px; } }
+
 /* 手機 mobile  */
