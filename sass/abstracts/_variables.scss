@@ -1,0 +1,47 @@
+// color
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000000;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #c8400a;
+$color-secondary-dark-2: #822a15;
+
+$color-tertiary-light: #0e0788;
+$color-tertiary-dark: #25224a;
+
+// dark mode
+$darkColor: rgb(255, 255, 255);
+// font
+$default-font-size: 1.6rem;
+// grid
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+$gap: 1.6rem;
+
+$chessMoveUnit: (100%/3)/2;
+
+// $shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px,
+//   rgba(17, 17, 26, 0.1) 0px 24px 80px;
+$shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+  rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+$borderStyle: 6px ridge $color-secondary-dark-2;
+
+.contentGap {
+  padding-bottom: 8.6rem;
+}
+.margin-b--b {
+  margin-bottom: 28px !important;
+}
+.ulSet {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 20px;
+}

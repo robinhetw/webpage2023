@@ -1,0 +1,30 @@
+.menu {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+  }
+  &__link {
+    list-style: none;
+    text-transform: uppercase;
+    font-family: $TitleFont;
+    padding-inline-start: 0px;
+    li {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: $gap;
+      }
+      a {
+        text-decoration: none;
+        color: $color-tertiary-dark;
+        display: inline-block;
+        padding: 6px 8px;
+        transition: all 0.3s;
+      }
+      .hvr-underline-from-left:before {
+        background-color: $color-tertiary-dark;
+      }
+    }
+  }
+}

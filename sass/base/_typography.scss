@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Plaster&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Stalinist+One&family=Wallpoet&display=swap");
+
+$logoFont: "Plaster", cursive;
+//$TitleFont: "Stalinist One", cursive;
+$TitleFont: "Press Start 2P", cursive;
+// $contentFont: "Roboto", sans-serif;
+$contentFont: "Press Start 2P", cursive;
+$PressStart: "Press Start 2P", cursive;
+// font-family: "Plaster", cursive;
+// font-family: "Roboto", sans-serif;
+// font-family: "Stalinist One", cursive;
+// font-family: "Wallpoet", cursive;;
+.contentTitle {
+  font-family: $TitleFont;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  display: block;
+  width: 240px;
+  background-color: $color-black;
+  color: $color-white;
+  text-align: center;
+  //transform: translateY(10px);
+  @include lvl1(black, $color-secondary-dark-2);
+
+  &--h3 {
+    font-family: $TitleFont;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0 0 16px 0px;
+    //@include lvl5(white);
+  }
+}
