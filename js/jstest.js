@@ -1,10 +1,26 @@
+//dark mood
 $(document).ready(function () {
-  $("#toggleBtn").click(function () {
-    $("#content").show();
-    $(this).addClass("close");
+  $("#goDark").click(function () {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
+    $(this).toggleClass("dark");
+    if ($(this).hasClass("dark")) {
+      $(this).children().removeClass("fa-moon").addClass("fa-sun");
+    } else {
+      $(this).children().removeClass("fa-sun").addClass("fa-moon");
+    }
   });
 });
 
+// btn toggle
+$(document).ready(function () {
+  $("#toggleBtn").click(function () {
+    $(this).addClass("close");
+    $("#content").slideDown(500);
+  });
+});
+// animation
 let playerState = "walk";
 const dropDown = document.getElementById("animations");
 dropDown.addEventListener("change", function (e) {
