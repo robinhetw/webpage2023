@@ -1,5 +1,5 @@
-//dark mood
 $(document).ready(function () {
+  //dark mood
   $("#goDark").click(function () {
     var element = document.body;
     element.classList.toggle("dark-mode");
@@ -10,6 +10,11 @@ $(document).ready(function () {
     } else {
       $(this).children().removeClass("fa-sun").addClass("fa-moon");
     }
+  });
+
+  // mobile menu
+  $("#mobileMenu").click(function () {
+    $(".menu__link").addClass("active");
   });
 });
 
@@ -37,7 +42,7 @@ const CANVAS_WIDTH = (canvas.width = parent.offsetWidth);
 const CANVAS_HEIGHT = (canvas.height = parent.offsetHeight);
 
 const playerImage = new Image();
-playerImage.src = "/img/character.png";
+playerImage.src = "img/character.png";
 const spritWidth = 72;
 const spritHeight = 48;
 

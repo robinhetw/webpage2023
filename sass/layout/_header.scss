@@ -5,17 +5,23 @@ h3 {
 
 .logo {
   font-family: $logoFont;
-  font-size: 3rem;
+  font-size: 2.4rem;
   text-decoration: none;
-  padding: 8px 16px;
-  background-color: $color-tertiary-dark;
-  color: $color-white;
+  padding: 8px 12px;
+  color: $color-secondary-dark-2;
+
+  text-transform: uppercase;
+  &::first-letter {
+    color: $color-secondary-light;
+    font-size: 2.8rem;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 .header {
-  width: 100%;
-  // background-image: url("/img/preview.jpg");
-  background-size: 20%;
-  background-attachment: fixed;
+  //width: 100%;
 }
 
 .layer {

@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Welcome to my personal website, where I showcase my achievements, talents, and interests. Get to know me better and explore the world through my perspective. Don't miss out on the exciting content I have prepared for you!">
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +24,7 @@
   <link rel="stylesheet" href="css/style.css" />
 
 
-  <title>web</title>
+  <title>Chen Wei He's Portfolio</title>
 </head>
 
 <body>
@@ -27,15 +32,26 @@
   <header class="header contentGap">
     <nav class="menu">
       <div class="container menu__container">
-        <h1><a href="" class="logo" title="CWH's Website">CWH</a></h1>
+        <h1 class="logo"><a href="#" title="Chen Wei He's Portfolio">Chen wei</a></h1>
+        <button class="menu__burger" aria-label="mobile menu" id="mobileMenu">
+          <label for="check" aria-label="mobile menu">
+            <input type="checkbox" id="check" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </button>
         <ul class="menu__link">
-          <li><a href="#" class="hvr-underline-from-left" title="about me">about me</a></li>
-          <li><a href="#" class="hvr-underline-from-left" title="my recommender">my recommender</a></li>
-          <li><a href="#" class="hvr-underline-from-left" title="my work">my work</a></li>
+          <li><a href="#scroll_about" class="hvr-underline-from-left" title="about">about</a></li>
+          <li><a href="#scroll_recommender" class="hvr-underline-from-left" title="recommender">recommender</a>
+          </li>
+          <li><a href="#scroll_projects" class="hvr-underline-from-left" title="projects">projects</a></li>
         </ul>
+
       </div>
+      <div class="mobile__bg"></div>
     </nav>
-    <div class="mobile__bg"></div>
+
 
 
 
@@ -93,7 +109,7 @@
             <div>Chen Wei He</div>
           </h2>
           <h3>I’m a front-end engineer and designer, looking for work around the world. </h3>
-          <a href="#" class="btn btn--primary margin-b--b" title="Get to know me">Get to know me</a>
+          <a href="#scroll_about" class="btn btn--primary margin-b--b" title="Get to know me">Get to know me</a>
           <a href="https://www.linkedin.com/in/chen-wei-he-910806b7" class="btn btn--sub" title="Contact me on Linkedin"
             target="_blank" rel="noopener noreferrer">Contact me on<i class="fa-brands fa-linkedin"></i></a>
 
@@ -103,7 +119,7 @@
     </div>
 
   </header>
-  <main class="main">
+  <main class="main" id="scroll_about">
     <div class="movieArea container">
       <div class="main__content">
         <h4 class="contentTitle">about me</h4>
@@ -232,7 +248,7 @@
       <img src="img/run.gif" class="blockArt__canvas--run">
     </div>
 
-    <div class="myRecommender">
+    <div class="myRecommender" id="scroll_recommender">
       <h4 class="contentTitle"> recommender</h4>
       <div class="cardGroup container">
 
@@ -345,11 +361,11 @@
 
     <div class="myWork">
 
-      <div class="machine container">
+      <div class="machine container" id="scroll_projects">
         <div class="machine__head">
           <h4 class="machine__head__title">
             <span class="first">My</span>
-            <img src="img/rocket.png" alt="moon" class="machine__head__img"><span class="second">Work</span>
+            <img src="img/rocket.png" alt="moon" class="machine__head__img"><span class="second">proj</span>
           </h4>
         </div>
         <div class="machine__body">
