@@ -30,6 +30,24 @@
 <body>
 
   <header class="header contentGap">
+
+    <nav class="navigation-menu">
+      <div class="navigation-menu__overlay" onclick="toggleMenuClicked()"></div>
+      <button type="button" class="hamburger-menu" onclick="toggleMenuClicked()">
+        <span class="material-icons" id="open-icon"><i class="fa-solid fa-bars"></i></span>
+        <span class="material-icons" id="close-icon"><i class="fa-solid fa-xmark"></i></span>
+      </button>
+      <h1 class="logo"><a href="#" title="Chen Wei He's Portfolio">Chen wei</a></h1>
+      <section class="navigation-menu__labels">
+        <a href="#scroll_about" class="hvr-underline-from-left" title="about">about</a>
+        <a href="#scroll_recommender" class="hvr-underline-from-left" title="recommender">recommender</a>
+        <a href="#scroll_projects" class="hvr-underline-from-left" title="projects">projects</a>
+
+      </section>
+    </nav>
+
+
+    <!--
     <nav class="menu">
       <div class="container menu__container">
         <h1 class="logo"><a href="#" title="Chen Wei He's Portfolio">Chen wei</a></h1>
@@ -41,7 +59,7 @@
             <span></span>
           </label>
         </button>
-        <ul class="menu__link">
+        <ul class="menu__link" id="menuLink">
           <li><a href="#scroll_about" class="hvr-underline-from-left" title="about">about</a></li>
           <li><a href="#scroll_recommender" class="hvr-underline-from-left" title="recommender">recommender</a>
           </li>
@@ -50,7 +68,7 @@
 
       </div>
       <div class="mobile__bg"></div>
-    </nav>
+    </nav> -->
 
 
 
@@ -120,6 +138,7 @@
 
   </header>
   <main class="main" id="scroll_about">
+
     <div class="movieArea container">
       <div class="main__content">
         <h4 class="contentTitle">about me</h4>

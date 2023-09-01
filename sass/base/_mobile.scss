@@ -144,6 +144,9 @@
 }
 
 @media only screen and (max-width: 570px) {
+  .frame {
+    height: 500px;
+  }
   .hero {
     h2 {
       font-size: 3.5rem;
@@ -227,6 +230,9 @@
       font-size: 2.8rem;
       line-height: 3.6rem;
     }
+  }
+  .frame {
+    height: 460px;
   }
   .machine__head__title {
     font-size: 2.6rem;

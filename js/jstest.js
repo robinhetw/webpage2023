@@ -11,11 +11,26 @@ $(document).ready(function () {
       $(this).children().removeClass("fa-sun").addClass("fa-moon");
     }
   });
+});
+// // mobile menu
 
-  // mobile menu
-  $("#mobileMenu").click(function () {
-    $(".menu__link").addClass("active");
-  });
+const toggleMenuClicked = () => {
+  const body = document.body;
+  const openIcon = document.getElementById("open-icon");
+  const closeIcon = document.getElementById("close-icon");
+
+  body.classList.toggle("open");
+  if (body.classList.contains("open")) {
+    openIcon.style.display = "none";
+    closeIcon.style.display = "flex";
+  } else {
+    openIcon.style.display = "flex";
+    closeIcon.style.display = "none";
+  }
+};
+
+$(".navigation-menu__labels a").on("click", function () {
+  toggleMenuClicked();
 });
 
 // btn toggle
