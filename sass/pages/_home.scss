@@ -94,15 +94,17 @@
   position: absolute;
   top: 65%;
   &__controls {
+    width: 100%;
     font-family: $PressStart;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: black;
     color: white;
-    //padding: 10px;
     text-transform: capitalize;
     position: absolute;
     bottom: 0;
-    padding: 8px;
+    padding: 6px 10px;
     label {
     }
     label,
@@ -353,6 +355,7 @@ button.readMore {
   }
 
   .backTitle {
+    backface-visibility: hidden;
     position: absolute;
     z-index: 99;
     background: url("bg/bg-2.png") repeat;
