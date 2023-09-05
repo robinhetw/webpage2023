@@ -39,6 +39,9 @@
   margin-inline-end: 0px;
   padding-inline-start: 20px; }
 
+.hidden {
+  opacity: 0; }
+
 html {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -47,8 +50,7 @@ html {
 
 body {
   font-size: 1.6em;
-  transition: all 0.5s;
-  padding-top: 80px; }
+  transition: all 0.5s; }
 
 *,
 *::after,
@@ -160,12 +162,19 @@ h3 {
   position: absolute;
   bottom: -20px;
   left: -20px;
-  width: 110%; }
+  width: 110%;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: bgMove; }
+  .ground__2 {
+    animation-direction: alternate-reverse; }
   .ground__bg {
     opacity: 0.6; }
   .ground__mt3 {
     right: -60px;
-    left: auto; }
+    left: auto;
+    animation-direction: alternate-reverse; }
 
 .stars {
   position: absolute;
@@ -326,6 +335,12 @@ h3 {
     filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
     transform: translate3d(5px, 5px, 0); } }
 
+@keyframes bgMove {
+  0% {
+    transform: translate3d(0, 3px, 0); }
+  100% {
+    transform: translate3d(5px, 5px, 0); } }
+
 @keyframes cloudyMove {
   0% {
     opacity: 0.2;
@@ -359,16 +374,28 @@ h3 {
       .footer__text a:hover {
         text-decoration: none; }
 
+@media only screen and (max-width: 768px) {
+  .sticky .navigation-menu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0; }
+  .sticky .header {
+    padding-top: 60px; } }
+
+.header {
+  padding-top: 60px; }
+
 .navigation-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
   box-sizing: border-box;
   width: 100%;
   height: 60px;
   margin: 0;
   padding: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -391,8 +418,8 @@ h3 {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(1px);
   transition: 0.3s; }
 
 body.open .navigation-menu__overlay {
@@ -413,8 +440,7 @@ body.open .navigation-menu__overlay {
   border-bottom-right-radius: 50%;
   border: none;
   color: #777;
-  background-color: #f8f6f6;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px; }
+  background-color: #f8f6f6; }
 
 #close-icon {
   display: none; }
@@ -457,7 +483,7 @@ body.open .navigation-menu__labels {
 .navigation-menu__labels > button.active {
   color: inherit; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .navigation-menu__labels {
     position: static;
     top: 0;
@@ -477,10 +503,10 @@ body.open .navigation-menu__labels {
 
 @media only screen and (max-width: 768px) {
   .navigation-menu__labels a {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     text-decoration: none;
     color: white;
-    padding: 8px 12px;
+    padding: 10px 12px;
     transition: translate 0.3s; } }
 
 .main::before {
@@ -1243,6 +1269,11 @@ button.readMore {
   .hero h3 {
     font-size: 1.8rem;
     line-height: 2.8rem; }
+  .sky {
+    top: 0; }
+  .ground {
+    bottom: 0;
+    left: -10px; }
   .movieArea {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px; }

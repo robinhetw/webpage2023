@@ -46,12 +46,21 @@ h3 {
   bottom: -20px;
   left: -20px;
   width: 110%;
+
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: bgMove;
+  &__2 {
+    animation-direction: alternate-reverse;
+  }
   &__bg {
     opacity: 0.6;
   }
   &__mt3 {
     right: -60px;
     left: auto;
+    animation-direction: alternate-reverse;
   }
 }
 
@@ -113,7 +122,6 @@ h3 {
     font-size: 5.2rem;
     line-height: 7.7rem;
     -webkit-text-stroke: 1px #fff;
-    //-webkit-text-fill-color: white;
     margin-bottom: 3.2rem;
     & div:first-child {
       //color: #ff9936;
@@ -121,11 +129,6 @@ h3 {
       text-shadow: -4px 4px 0px #e27a14, -8px 8px 0px #d8710d;
     }
     & div:last-child {
-      // background: linear-gradient(180deg, #cc6600 0%, #c51615 100%);
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
-      // background-clip: text;
-      // text-fill-color: transparent;
       @include shinWord(#c51615);
       text-shadow: -4px 4px 0px #a3290c, -8px 8px 0px #822a15,
         -12px 12px 0px #8d2910;
@@ -226,7 +229,14 @@ h3 {
     transform: translate3d(5px, 5px, 0);
   }
 }
-
+@keyframes bgMove {
+  0% {
+    transform: translate3d(0, 3px, 0);
+  }
+  100% {
+    transform: translate3d(5px, 5px, 0);
+  }
+}
 @keyframes cloudyMove {
   0% {
     opacity: 0.2;

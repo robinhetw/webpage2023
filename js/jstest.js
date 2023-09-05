@@ -211,3 +211,42 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+// sticky nav
+// const sectionMain = document.querySelector(".main__content__img");
+// const obs = new IntersectionObserver(
+//   function (entries) {
+//     const ent = entries[0];
+//     if (!ent.isIntersecting === false) {
+//       console.log("ent");
+//       document.body.classList.add("sticky");
+//     } else {
+//       document.body.classList.remove("sticky");
+//     }
+//   },
+//   { root: null, threshold: 0, rootMargin: "0px" }
+// );
+// obs.observe(sectionMain);
+
+// way point
+function WaypointFadeIn(selector, callback, offset, duration) {
+  const waypoint = new Waypoint({
+    element: document.querySelector(selector),
+    handler: function () {
+      const element = document.querySelector(selector);
+      element.classList.add("animate__animated", "animate__fadeIn");
+      element.style.animationDuration = duration;
+      callback();
+    },
+    offset: offset,
+  });
+}
+
+WaypointFadeIn(
+  ".frame",
+  function () {
+    console.log("觸發了 Waypoint");
+  },
+  "20%",
+  "3s"
+);

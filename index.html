@@ -21,6 +21,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/hover.css">
   <link rel="stylesheet" href="css/style.css" />
 
@@ -53,7 +54,7 @@
 
 
 
-    <div class="frame" id="scene">
+    <div class="frame hidden" id="scene">
       <div class="layer" data-depth="0.1">
         <img src="img/sky.png" alt="" class="sky">
       </div>
@@ -92,7 +93,7 @@
         <img src="img/ground-2.png" alt=" " class="ground">
       </div>
       <div class="layer" data-depth="0.1">
-        <img src="img/mountain.png" alt="" class="ground">
+        <img src="img/mountain.png" alt="" class="ground ground__2">
       </div>
 
       <div class="layer" data-depth="0.05">
@@ -118,7 +119,7 @@
 
   </header>
   <main class="main" id="scroll_about">
-
+    <!-- about me -->
     <div class="movieArea container">
       <div class="main__content">
         <h4 class="contentTitle">about me</h4>
@@ -242,6 +243,7 @@
 
       </div>
     </div>
+    <!-- first section -->
     <div class="blockArt">
       <canvas id="canvas2" class="blockArt__canvas"></canvas>
       <img src="img/run.gif" class="blockArt__canvas--run">
@@ -575,6 +577,9 @@
     integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="js/noframework.waypoints.min.js"></script>
+
+
   <script src="js/jstest.js"></script>
 
 </body>
