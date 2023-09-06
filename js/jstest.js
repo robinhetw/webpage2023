@@ -1,16 +1,15 @@
 $(document).ready(function () {
   //dark mood
-  $("#goDark").click(function () {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-
-    $(this).toggleClass("dark");
-    if ($(this).hasClass("dark")) {
-      $(this).children().removeClass("fa-moon").addClass("fa-sun");
-    } else {
-      $(this).children().removeClass("fa-sun").addClass("fa-moon");
-    }
-  });
+  // $("#goDark").click(function () {
+  //   var element = document.body;
+  //   element.classList.toggle("dark-mode");
+  //   $(this).toggleClass("dark");
+  //   if ($(this).hasClass("dark")) {
+  //     $(this).children().removeClass("fa-moon").addClass("fa-sun");
+  //   } else {
+  //     $(this).children().removeClass("fa-sun").addClass("fa-moon");
+  //   }
+  // });
 });
 // // mobile menu
 
@@ -241,12 +240,50 @@ function WaypointFadeIn(selector, callback, offset, duration) {
     offset: offset,
   });
 }
+function WaypointFadeInLeft(selector, callback, offset, duration) {
+  const waypoint = new Waypoint({
+    element: document.querySelector(selector),
+    handler: function () {
+      const element = document.querySelector(selector);
+      element.classList.add("animate__animated", "animate__fadeInLeft");
+      element.style.animationDuration = duration;
+      callback();
+    },
+    offset: offset,
+  });
+}
+function WaypointFadeInRight(selector, callback, offset, duration) {
+  const waypoint = new Waypoint({
+    element: document.querySelector(selector),
+    handler: function () {
+      const element = document.querySelector(selector);
+      element.classList.add("animate__animated", "animate__fadeInRight");
+      element.style.animationDuration = duration;
+      callback();
+    },
+    offset: offset,
+  });
+}
+function WaypointFadeInUp(selector, callback, offset, duration) {
+  const waypoint = new Waypoint({
+    element: document.querySelector(selector),
+    handler: function () {
+      const element = document.querySelector(selector);
+      element.classList.add("animate__animated", "animate__fadeInUp");
+      element.style.animationDuration = duration;
+      callback();
+    },
+    offset: offset,
+  });
+}
+WaypointFadeIn(".wayPoint-1", function () {}, "80%", "2s");
 
-WaypointFadeIn(
-  ".frame",
-  function () {
-    console.log("觸發了 Waypoint");
-  },
-  "20%",
-  "3s"
-);
+WaypointFadeInLeft("#wayPoint-2", function () {}, "80%", "2s");
+
+WaypointFadeInRight("#wayPoint-3", function () {}, "80%", "2s");
+
+WaypointFadeInLeft(".wayPoint-4", function () {}, "80%", "2s");
+
+WaypointFadeInRight("#wayPoint-5", function () {}, "80%", "2s");
+
+WaypointFadeInUp("#wayPoint-6", function () {}, "80%", "2s");

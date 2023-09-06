@@ -54,7 +54,7 @@
 
 
 
-    <div class="frame hidden" id="scene">
+    <div class="frame hidden wayPoint-1" id="scene">
       <div class="layer" data-depth="0.1">
         <img src="img/sky.png" alt="" class="sky">
       </div>
@@ -120,136 +120,141 @@
   </header>
   <main class="main" id="scroll_about">
     <!-- about me -->
-    <div class="movieArea container">
-      <div class="main__content">
-        <h4 class="contentTitle">about me</h4>
-        <div class="main__content__box">
-          <div class="main__content__img">
-            <img src="img/glasses.png" alt="" class="glasses">
+    <div id="wayPoint-2" class="hidden">
+      <div class="movieArea container">
+        <div class="main__content">
+          <h4 class="contentTitle">about me</h4>
+          <div class="main__content__box">
+            <div class="main__content__img">
+              <img src="img/glasses.png" alt="" class="glasses">
 
-            <div class="pixelart-to-css"></div>
-            <canvas id="canvas1" class="canvas"></canvas>
-            <div class="canvas__controls">
-              <label for="animations"> Action:</label>
-              <select name="animations" id="animations">
-                <option value="walk">Walk</option>
-                <option value="idle">Idle</option>
-                <option value="jump">Jump</option>
-                <option value="attack">Attack</option>
-                <option value="defense">Defense</option>
-                <option value="injuried">Injuried</option>
-                <option value="die">Die</option>
-                <option value="trick">Trick</option>
-              </select>
+              <div class="pixelart-to-css"></div>
+              <canvas id="canvas1" class="canvas"></canvas>
+              <div class="canvas__controls">
+                <label for="animations"> Action:</label>
+                <select name="animations" id="animations">
+                  <option value="walk">Walk</option>
+                  <option value="idle">Idle</option>
+                  <option value="jump">Jump</option>
+                  <option value="attack">Attack</option>
+                  <option value="defense">Defense</option>
+                  <option value="injuried">Injuried</option>
+                  <option value="die">Die</option>
+                  <option value="trick">Trick</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="main__content__info">
-            Hello, My name is Chen Wei He.<br><br>
-            I am an experienced web engineer with proficiency in HTML5, CSS3, Sass,
-            JavaScript, jQuery, Git and CSS frameworks such as Bootstrap.
-            <br><br>I possess strong skills in translating UI/UX
-            mock-ups into responsive interfaces that work seamlessly across cross-browser, desktop, mobile, and tablet
-            environments, and am knowledgeable in design thinking, usability principles, and accessibility
-            guidelines.<br><br>
-            My experience with Figma and Adobe XD has honed my prototyping skills, and I am also skilled in building
-            reusable code and libraries. Additionally, I excel in teamwork and team-building.
+            <div class="main__content__info">
+              Hello, My name is Chen Wei He.<br><br>
+              I am an experienced web engineer with proficiency in HTML5, CSS3, Sass,
+              JavaScript, jQuery, Git and CSS frameworks such as Bootstrap.
+              <br><br>I possess strong skills in translating UI/UX
+              mock-ups into responsive interfaces that work seamlessly across cross-browser, desktop, mobile, and tablet
+              environments, and am knowledgeable in design thinking, usability principles, and accessibility
+              guidelines.<br><br>
+              My experience with Figma and Adobe XD has honed my prototyping skills, and I am also skilled in building
+              reusable code and libraries. Additionally, I excel in teamwork and team-building.
 
 
 
-            <ul class="main__content__link">
-              <li><a href="https://medium.com/@peaceful_oxblood_woodchuck_486" title="medium" target="_blank"><i
-                    class="fa-brands fa-medium"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/chen-wei-he-910806b7" title="linkedin" target="_blank"><i
-                    class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
-
-          </div>
-          <div class="main__content__work main__content__info">
-            <h3 class="contentTitle--h3">work experience</h3>
-            <div class="workExperience">
-              <div>Blue Planet Inc</div>
-              <div>Taipei,TW</div>
-              <div>Front-end Engineer</div>
-              <div>Jul 2020-Present</div>
-              <ul>
-                <li>Served as the on-site engineer for the Information Department of Taipei’s City Government.</li>
-                <li>Assisted in setting up websites of bureaus and departments, e.g., Taipei Zoo, Dept. of Social
-                  Welfare, Dept. of Rapid Transit Systems, Dept. of Health, Dept. of Urban Development, Research,
-                  Development and Evaluation Commission.
-                </li>
-                <li>Improved the accessibility testing process of the websites of the Taipei City Government and the
-                  Information Department, increased the improvement rate and shortened the process time.
-                </li>
-
-                <li>Created and designed reusable visual components with HTML5/CSS3/Sass with responsive layout for
-                  TaipeiPass app.
-                </li>
-
-                <li>Maintained websites, improving through UX and accessibility features.
-                </li>
-                <li>Provided customer service for the website (addressing service tickets).
-                </li>
-                <li>Collaborated with UI/UX designers by using Zeplin, Adobe XD.
-                </li>
-                <li>Designed website’s wireframe and prototype using Figma.
-                </li>
+              <ul class="main__content__link">
+                <li><a href="https://medium.com/@peaceful_oxblood_woodchuck_486" title="medium" target="_blank"
+                    rel="noopener noreferrer"><i class="fa-brands fa-medium"></i></a></li>
+                <li><a href="https://github.com/robinhetw" title="Github" target="_blank" rel="noopener noreferrer"><i
+                      class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/chen-wei-he-910806b7" title="linkedin" target="_blank"
+                    rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></li>
               </ul>
+
             </div>
-            <button title="read More" class="readMore hvr-underline-from-center" id="toggleBtn">
-              <img src="img/arrowDown.png" alt=" ">
-              Read More
-            </button>
-            <div id="content" class="close">
+            <div class="main__content__work main__content__info">
+              <h3 class="contentTitle--h3">work experience</h3>
               <div class="workExperience">
-                <div>Honghwa International Corp</div>
+                <div>Blue Planet Inc</div>
                 <div>Taipei,TW</div>
                 <div>Front-end Engineer</div>
-                <div>Jan 2019 – Jul 2020</div>
+                <div>Jul 2020-Present</div>
                 <ul>
-                  <li>Served as the on-site engineer for the Information Department of Taipei’s City Government.
+                  <li>Served as the on-site engineer for the Information Department of Taipei’s City Government.</li>
+                  <li>Assisted in setting up websites of bureaus and departments, e.g., Taipei Zoo, Dept. of Social
+                    Welfare, Dept. of Rapid Transit Systems, Dept. of Health, Dept. of Urban Development, Research,
+                    Development and Evaluation Commission.
+                  </li>
+                  <li>Improved the accessibility testing process of the websites of the Taipei City Government and the
+                    Information Department, increased the improvement rate and shortened the process time.
+                  </li>
+
+                  <li>Created and designed reusable visual components with HTML5/CSS3/Sass with responsive layout for
+                    TaipeiPass app.
+                  </li>
+
+                  <li>Maintained websites, improving through UX and accessibility features.
+                  </li>
+                  <li>Provided customer service for the website (addressing service tickets).
+                  </li>
+                  <li>Collaborated with UI/UX designers by using Zeplin, Adobe XD.
+                  </li>
+                  <li>Designed website’s wireframe and prototype using Figma.
                   </li>
                 </ul>
               </div>
+              <button title="read More" class="readMore hvr-underline-from-center" id="toggleBtn">
+                <img src="img/arrowDown.png" alt=" ">
+                Read More
+              </button>
+              <div id="content" class="close">
+                <div class="workExperience">
+                  <div>Honghwa International Corp</div>
+                  <div>Taipei,TW</div>
+                  <div>Front-end Engineer</div>
+                  <div>Jan 2019 – Jul 2020</div>
+                  <ul>
+                    <li>Served as the on-site engineer for the Information Department of Taipei’s City Government.
+                    </li>
+                  </ul>
+                </div>
 
-              <div class="workExperience">
-                <div>Self-employed</div>
-                <div>Taipei,TW</div>
-                <div>Freelance Web Developer</div>
-                <div>Jan 2017 – Apr 2018</div>
-                <ul>
-                  <li>Delivered web development projects using HTML, CSS, Javascript, and Wordpress.</li>
-                </ul>
+                <div class="workExperience">
+                  <div>Self-employed</div>
+                  <div>Taipei,TW</div>
+                  <div>Freelance Web Developer</div>
+                  <div>Jan 2017 – Apr 2018</div>
+                  <ul>
+                    <li>Delivered web development projects using HTML, CSS, Javascript, and Wordpress.</li>
+                  </ul>
+                </div>
+
+                <div class="workExperience">
+                  <div>Siloah Travel Co., Ltd</div>
+                  <div>Taipei,TW</div>
+                  <div>Website Developer</div>
+                  <div>Apr 2016 – Nov 2016</div>
+                  <ul>
+                    <li>Planned and designed website using HTML, CSS, Javascript, and Wordpress.
+                    </li>
+                  </ul>
+                </div>
+
               </div>
 
-              <div class="workExperience">
-                <div>Siloah Travel Co., Ltd</div>
-                <div>Taipei,TW</div>
-                <div>Website Developer</div>
-                <div>Apr 2016 – Nov 2016</div>
-                <ul>
-                  <li>Planned and designed website using HTML, CSS, Javascript, and Wordpress.
-                  </li>
-                </ul>
-              </div>
+
+
+
 
             </div>
-
-
-
-
-
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
+
     <!-- first section -->
-    <div class="blockArt">
+    <div class="blockArt hidden" id="wayPoint-3">
       <canvas id="canvas2" class="blockArt__canvas"></canvas>
       <img src="img/run.gif" class="blockArt__canvas--run">
     </div>
 
-    <div class="myRecommender" id="scroll_recommender">
+    <div class="myRecommender hidden wayPoint-4" id="scroll_recommender">
       <h4 class="contentTitle"> recommender</h4>
       <div class="cardGroup container">
 
@@ -344,24 +349,24 @@
       </div>
     </div>
 
-
-    <div class="blockArt rotate">
-
-      <div class="chessBoard">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="hidden" id="wayPoint-5">
+      <div class="blockArt rotate">
+        <div class="chessBoard">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
 
-    <div class="myWork">
 
+    <div class="myWork hidden" id="wayPoint-6">
       <div class="machine container" id="scroll_projects">
         <div class="machine__head">
           <h4 class="machine__head__title">
@@ -557,8 +562,8 @@
     </div>
 
   </main>
-  <button class="modeBtn" aria-level="light and dark mode" id="goDark">
-    <i class="fa-regular fa-moon"></i>
+  <!-- <button class="modeBtn" aria-level="light and dark mode" id="goDark">
+    <i class="fa-regular fa-moon"></i> -->
   </button>
   <footer class="footer">
     <div class="container">

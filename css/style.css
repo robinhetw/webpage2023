@@ -57,7 +57,7 @@ body {
 *::before {
   box-sizing: inherit; }
 
-.container, .main::before {
+.container, .movieArea::before {
   max-width: 96rem;
   padding-left: 12px;
   padding-right: 12px;
@@ -405,9 +405,11 @@ h3 {
   text-transform: uppercase; }
 
 #scroll_projects,
-#scroll_recommender,
-#scroll_about {
+#scroll_recommender {
   padding-top: 60px; }
+
+#scroll_about {
+  padding-top: 110px; }
 
 .navigation-menu__overlay {
   position: fixed;
@@ -508,16 +510,6 @@ body.open .navigation-menu__labels {
     color: white;
     padding: 10px 12px;
     transition: translate 0.3s; } }
-
-.main::before {
-  content: " ";
-  display: block;
-  height: 55px;
-  background-image: url("bg/landscape.png");
-  overflow: hidden;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; }
 
 .main__content {
   border: 6px ridge #c8400a;
@@ -649,7 +641,21 @@ button.readMore {
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  padding: 2.4rem 2.4rem 2.4rem 2.4rem; }
+  padding: 2.4rem 2.4rem 2.4rem 2.4rem;
+  position: relative; }
+  .movieArea::before {
+    content: " ";
+    display: block;
+    height: 55px;
+    background-image: url("bg/landscape.png");
+    overflow: hidden;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 100%;
+    position: absolute;
+    top: -50px;
+    left: 0px; }
 
 @keyframes bgAnimation {
   0% {
@@ -943,9 +949,6 @@ button.readMore {
     left: 83.33333%;
     top: 83.33333%; } }
 
-.myWork {
-  padding-top: 86px; }
-
 .machine {
   margin: 16px auto;
   padding-bottom: 24px; }
@@ -1227,7 +1230,7 @@ button.readMore {
 
 /* 平板  */
 @media only screen and (max-width: 1024px) {
-  .container, .main::before {
+  .container, .movieArea::before {
     margin-left: 12px;
     margin-right: 12px; } }
 
@@ -1240,7 +1243,7 @@ button.readMore {
     width: 100%; }
   .frame {
     margin: 20px 12px; }
-  .container, .main::before,
+  .container, .movieArea::before,
   .main::before {
     margin-left: 12px;
     margin-right: 12px; }

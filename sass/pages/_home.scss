@@ -1,18 +1,18 @@
 .main {
-  &::before {
-    content: " ";
-    display: block;
-    // max-width: 108rem;
-    // margin-right: auto;
-    // margin-left: auto;
-    @extend .container;
-    height: 55px;
-    background-image: url("bg/landscape.png");
-    overflow: hidden;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    box-shadow: $shadow;
-  }
+  // &::before {
+  //   content: " ";
+  //   display: block;
+  //   // max-width: 108rem;
+  //   // margin-right: auto;
+  //   // margin-left: auto;
+  //   @extend .container;
+  //   height: 55px;
+  //   background-image: url("bg/landscape.png");
+  //   overflow: hidden;
+  //   border-top-left-radius: 25px;
+  //   border-top-right-radius: 25px;
+  //   box-shadow: $shadow;
+  // }
 
   &__content {
     border: 6px ridge $color-secondary-dark;
@@ -185,6 +185,22 @@ button.readMore {
   border-bottom-right-radius: 50px;
   box-shadow: $shadow;
   padding: 2.4rem 2.4rem 2.4rem 2.4rem;
+  position: relative;
+  &::before {
+    content: " ";
+    display: block;
+    @extend .container;
+    height: 55px;
+    background-image: url("bg/landscape.png");
+    overflow: hidden;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: $shadow;
+    width: 100%;
+    position: absolute;
+    top: -50px;
+    left: 0px;
+  }
 }
 
 @keyframes bgAnimation {
@@ -573,9 +589,7 @@ button.readMore {
     top: $chessMoveUnit * 5;
   }
 }
-.myWork {
-  padding-top: 86px;
-}
+
 .machine {
   margin: 16px auto;
   padding-bottom: 24px;

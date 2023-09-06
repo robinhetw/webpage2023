@@ -34,9 +34,11 @@
 }
 
 #scroll_projects,
-#scroll_recommender,
-#scroll_about {
+#scroll_recommender {
   padding-top: 60px;
+}
+#scroll_about {
+  padding-top: 110px;
 }
 .navigation-menu__overlay {
   position: fixed;
