@@ -853,7 +853,6 @@ button.readMore {
     background-color: white; }
 
 .movieArea {
-  height: 100%;
   background: url("bg/bg-4.png") repeat 0 0;
   -webkit-animation: bgAnimation 80s infinite linear;
           animation: bgAnimation 80s infinite linear;
@@ -1682,7 +1681,9 @@ button.readMore {
 @media only screen and (max-width: 1024px) {
   .container, .movieArea::before {
     margin-left: 12px;
-    margin-right: 12px; } }
+    margin-right: 12px; }
+  .movieArea::before {
+    left: -12px; } }
 
 @media only screen and (max-width: 930px) {
   .front .backTitle {
