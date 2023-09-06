@@ -1683,7 +1683,8 @@ button.readMore {
     margin-left: 12px;
     margin-right: 12px; }
   .movieArea::before {
-    left: -12px; } }
+    margin-left: initial;
+    margin-right: initial; } }
 
 @media only screen and (max-width: 930px) {
   .front .backTitle {
@@ -1694,10 +1695,6 @@ button.readMore {
     width: 100%; }
   .frame {
     margin: 20px 12px; }
-  .container, .movieArea::before,
-  .main::before {
-    margin-left: 12px;
-    margin-right: 12px; }
   .cardGroup {
     display: -webkit-box;
     display: -ms-flexbox;
