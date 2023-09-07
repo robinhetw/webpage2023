@@ -8,12 +8,13 @@
     margin-left: 12px;
     margin-right: 12px;
   }
+  .movieArea::before {
+    margin-left: initial;
+    margin-right: initial;
+  }
 }
 
 @media only screen and (max-width: 930px) {
-  .front .backTitle {
-    padding: 10px 12px;
-  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -25,11 +26,7 @@
   .frame {
     margin: 20px 12px;
   }
-  .container,
-  .main::before {
-    margin-left: 12px;
-    margin-right: 12px;
-  }
+
   .cardGroup {
     display: flex;
     gap: 50px 5%;
@@ -90,6 +87,12 @@
       &__info {
         padding: 1.6rem;
       }
+      &__box {
+        grid-template-columns: 230px 1fr;
+      }
+      &__img .glasses {
+        left: -40%;
+      }
     }
   }
 }
@@ -102,7 +105,7 @@
     }
   }
   .twoCard {
-    flex-basis: 55%;
+    flex-basis: 65%;
   }
   .main {
     &__content {
@@ -112,7 +115,12 @@
       }
       &__img {
         width: 250px;
+        height: 320px;
         margin: 10px auto;
+        .glasses {
+          left: -30%;
+          top: 100px;
+        }
       }
       &__info {
         grid-column-start: 1;
@@ -243,11 +251,11 @@
     height: 460px;
   }
   .main__content__img {
-    width: 100%;
+    width: 200px;
+    height: 280px;
     .glasses {
-      width: 140px;
-      top: 140px;
-      left: 80px;
+      width: 90px;
+      top: 90px;
     }
   }
   .machine__head__title {
@@ -292,8 +300,8 @@
     width: 160px;
   }
   .main__content__img .glasses {
-    top: 130px;
-    left: 60px;
+    //top: 130px;
+    //left: 60px;
   }
   .chessBoard::before,
   .chessBoard::after {

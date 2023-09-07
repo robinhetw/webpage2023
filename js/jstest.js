@@ -69,7 +69,7 @@ const animationStates = [
   { name: "jump", frames: 3 },
   { name: "attack", frames: 4 },
   { name: "defense", frames: 4 },
-  { name: "injuried", frames: 3 },
+  { name: "Injured", frames: 3 },
   { name: "die", frames: 5 },
   { name: "trick", frames: 6 },
 ];
@@ -94,7 +94,7 @@ function animate() {
   let frameY = spriteAnimations[playerState].loc[position].y;
 
   ctx.save();
-  ctx.scale(1.5, 1.5);
+  ctx.scale(1.3, 1.3);
 
   ctx.drawImage(
     playerImage,
@@ -276,14 +276,35 @@ function WaypointFadeInUp(selector, callback, offset, duration) {
     offset: offset,
   });
 }
-WaypointFadeIn(".wayPoint-1", function () {}, "80%", "2s");
 
-WaypointFadeInLeft("#wayPoint-2", function () {}, "80%", "2s");
+function WaypointRIR(selector, callback, offset, duration) {
+  const waypoint = new Waypoint({
+    element: document.querySelector(selector),
+    handler: function () {
+      setTimeout(function () {
+        const element = document.querySelector(selector);
+        element.classList.add(
+          "animate__animated",
+          "animate__rotateInDownRight"
+        );
+        element.style.animationDuration = duration;
+        callback();
+      }, 1500);
+    },
+    offset: offset,
+  });
+}
 
-WaypointFadeInRight("#wayPoint-3", function () {}, "80%", "2s");
+WaypointFadeIn(".wayPoint-1", function () {}, "95%", "1s");
 
-WaypointFadeInLeft(".wayPoint-4", function () {}, "80%", "2s");
+WaypointFadeInLeft("#wayPoint-2", function () {}, "95%", "1s");
 
-WaypointFadeInRight("#wayPoint-5", function () {}, "80%", "2s");
+WaypointFadeInRight("#wayPoint-3", function () {}, "95%", "1s");
 
-WaypointFadeInUp("#wayPoint-6", function () {}, "80%", "2s");
+WaypointFadeInLeft(".wayPoint-4", function () {}, "95%", "1s");
+
+WaypointFadeInRight("#wayPoint-5", function () {}, "95%", "1s");
+
+WaypointFadeIn("#wayPoint-6", function () {}, "95%", "1s");
+
+WaypointRIR("#waypoint-glasses", function () {}, "95%", "1s");
