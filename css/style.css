@@ -27,7 +27,7 @@
     background-position: 100% 50%; } }
 
 .contentGap {
-  padding-bottom: 6.6rem; }
+  padding-bottom: 0rem; }
 
 .margin-b--b {
   margin-bottom: 28px !important; }
@@ -142,6 +142,9 @@ h3 {
   .logo a {
     color: inherit;
     text-decoration: none; }
+
+.header {
+  padding-top: 80px; }
 
 .layer {
   height: 100%;
@@ -383,9 +386,6 @@ h3 {
   .sticky .header {
     padding-top: 60px; } }
 
-.header {
-  padding-top: 60px; }
-
 .navigation-menu {
   position: fixed;
   z-index: 1;
@@ -589,7 +589,8 @@ body.open .navigation-menu__labels {
       color: black;
       width: inherit; }
     .canvas__controls select {
-      padding: 8px 12px;
+      height: 42px;
+      text-indent: 8px;
       border: 6px outset #c8400a;
       border-radius: 8px; }
 
@@ -694,8 +695,8 @@ button.readMore {
     transform: scale(0.4) rotate(-25deg); } }
 
 .blockArt {
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
   margin: 86px auto 50px auto;
   position: relative;
   overflow: hidden;
@@ -708,6 +709,7 @@ button.readMore {
     overflow: inherit;
     border-radius: inherit; }
     .blockArt__canvas--run {
+      width: 180px;
       position: absolute;
       bottom: 20px;
       left: 50px;
@@ -883,8 +885,8 @@ button.readMore {
   .chessBoard::before, .chessBoard::after {
     content: "";
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-size: 100%;
     translate: -50% -50%;
     rotate: -45deg; }
@@ -1038,7 +1040,7 @@ button.readMore {
     .machine__body__screen {
       border-radius: 20px;
       overflow: hidden;
-      height: 480px;
+      height: 560px;
       width: 100%; }
   .machine__footer {
     background-image: url(bg/pexels-philippe-donn-1169754.jpg); }
@@ -1048,6 +1050,32 @@ button.readMore {
   max-width: inherit;
   height: inherit;
   position: relative; }
+  .slideshow-container__btn {
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    background-color: transparent;
+    border: none;
+    color: #ffb900;
+    font-size: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.3s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; }
+    .slideshow-container__btn:hover {
+      opacity: 1;
+      box-shadow: #26394d 0px 20px 30px -10px; }
+  .slideshow-container__dotGroup {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    z-index: 999;
+    translate: -50%; }
+  .slideshow-container .right {
+    right: 18px; }
+  .slideshow-container .left {
+    left: 18px; }
 
 /* Hide the images by default */
 .mySlides {
@@ -1058,7 +1086,7 @@ button.readMore {
   color: white;
   background-size: cover; }
   .mySlides__info {
-    background-color: rgba(37, 34, 74, 0.9);
+    background-color: rgba(37, 34, 74, 0.96);
     padding: 16px;
     border: 6px ridge #822a15;
     width: 70%;
@@ -1071,7 +1099,7 @@ button.readMore {
     .mySlides__info__title {
       font-family: "Press Start 2P", cursive;
       margin-top: 8px;
-      margin-bottom: 0px;
+      margin-bottom: 8px;
       text-transform: uppercase;
       font-size: 1.8rem; }
     .mySlides__info__subTitle {
@@ -1096,7 +1124,7 @@ button.readMore {
     .mySlides__info__content.small {
       max-height: 130px; }
     .mySlides__info__content.big {
-      max-height: 280px; }
+      max-height: 360px; }
     .mySlides__info__content {
       overflow-y: scroll;
       padding-right: 12px;
@@ -1106,7 +1134,7 @@ button.readMore {
       /* Handle on hover */ }
       .mySlides__info__content figure {
         display: block;
-        margin-block-start: 1em;
+        margin-block-start: 0em;
         margin-block-end: 1em;
         margin-inline-start: 10px;
         margin-inline-end: 10px;
@@ -1134,11 +1162,11 @@ button.readMore {
       .mySlides__info__content .offline,
       .mySlides__info__content .offline + ul {
         color: #999; }
-  .mySlides:nth-child(1) {
-    background-image: url(bg/bg__4.gif); }
   .mySlides:nth-child(2) {
-    background-image: url(bg/bg_darksky.gif); }
+    background-image: url(bg/bg__4.gif); }
   .mySlides:nth-child(3) {
+    background-image: url(bg/bg_darksky.gif); }
+  .mySlides:nth-child(4) {
     background-image: url(bg/bg__6.gif); }
   .mySlides__controller {
     position: relative;
@@ -1258,13 +1286,25 @@ button.readMore {
   .twoCard {
     flex-basis: 45%; }
   .mySlides__info {
-    width: 90%; }
+    width: 75%; }
   .menu__burger {
     display: block; }
   .menu__link {
     display: none; }
   .menu__link.active {
     display: block; } }
+
+@media only screen and (max-width: 776px) {
+  .mySlides__info {
+    top: 47%; } }
+
+@media only screen and (max-width: 700px) {
+  .mySlides__info {
+    width: 76%; }
+  .slideshow-container .right {
+    right: 12px; }
+  .slideshow-container .left {
+    left: 12px; } }
 
 @media only screen and (max-width: 680px) {
   .hero h2 {
@@ -1313,6 +1353,11 @@ button.readMore {
   .main__content__info {
     grid-column-start: 1;
     grid-column-end: 3; }
+  .canvas {
+    top: 58%; }
+  .pixelart-to-css {
+    top: -20px;
+    left: -30px; }
   .machine__head, .machine__body, .machine__footer {
     border-width: 14px;
     padding: 14px; }
@@ -1327,7 +1372,11 @@ button.readMore {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px; }
   .mySlides__info {
-    width: 95%; }
+    width: 75%; }
+  .slideshow-container .left {
+    left: 6px; }
+  .slideshow-container .right {
+    right: 6px; }
   .numbertext {
     padding: 8px; } }
 
@@ -1366,14 +1415,22 @@ button.readMore {
     height: 520px; }
   .movieArea,
   .main__content {
-    padding: 1.2rem 1rem; } }
+    padding: 1.2rem 1rem; }
+  .mySlides__info__content.big {
+    max-height: 310px; } }
 
 @media only screen and (max-width: 480px) {
   .hero h2 {
     font-size: 3rem;
     line-height: 4rem; }
   .hero h3 {
-    line-height: 1.8rem; } }
+    line-height: 1.8rem; }
+  .mySlides__info {
+    width: 95%; }
+  .slideshow-container .left {
+    left: 2px; }
+  .slideshow-container .right {
+    right: 2px; } }
 
 @media only screen and (max-width: 460px) {
   .machine__head__title {
@@ -1420,9 +1477,6 @@ button.readMore {
     flex-basis: 90%; }
   .blockArt__canvas--run {
     width: 160px; }
-  .chessBoard::before, .chessBoard::after {
-    width: 40px;
-    height: 40px; }
   .myWork {
     padding-top: 16px; }
   .prev,

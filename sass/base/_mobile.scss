@@ -38,7 +38,7 @@
     flex-basis: 45%;
   }
   .mySlides__info {
-    width: 90%;
+    width: 75%;
   }
 
   .menu {
@@ -50,6 +50,24 @@
     }
     &__link.active {
       display: block;
+    }
+  }
+}
+@media only screen and (max-width: 776px) {
+  .mySlides__info {
+    top: 47%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .mySlides__info {
+    width: 76%;
+  }
+  .slideshow-container {
+    .right {
+      right: 12px;
+    }
+    .left {
+      left: 12px;
     }
   }
 }
@@ -128,6 +146,13 @@
       }
     }
   }
+  .canvas {
+    top: 58%;
+  }
+  .pixelart-to-css {
+    top: -20px;
+    left: -30px;
+  }
   .machine {
     &__head,
     &__body,
@@ -152,7 +177,15 @@
     }
   }
   .mySlides__info {
-    width: 95%;
+    width: 75%;
+  }
+  .slideshow-container {
+    .left {
+      left: 6px;
+    }
+    .right {
+      right: 6px;
+    }
   }
   .numbertext {
     padding: 8px;
@@ -215,6 +248,9 @@
   .main__content {
     padding: 1.2rem 1rem;
   }
+  .mySlides__info__content.big {
+    max-height: 310px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .hero {
@@ -224,6 +260,17 @@
     }
     h3 {
       line-height: 1.8rem;
+    }
+  }
+  .mySlides__info {
+    width: 95%;
+  }
+  .slideshow-container {
+    .left {
+      left: 2px;
+    }
+    .right {
+      right: 2px;
     }
   }
 }
@@ -303,11 +350,7 @@
     //top: 130px;
     //left: 60px;
   }
-  .chessBoard::before,
-  .chessBoard::after {
-    width: 40px;
-    height: 40px;
-  }
+
   .myWork {
     padding-top: 16px;
   }

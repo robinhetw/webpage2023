@@ -211,50 +211,46 @@
                   </li>
                 </ul>
               </div>
-              <button title="read More" class="readMore hvr-underline-from-center" id="toggleBtn">
-                <img src="img/arrowDown.png" alt=" ">
-                Read More
-              </button>
-              <div id="content" class="close">
-                <div class="workExperience">
-                  <div>Honghwa International Corp</div>
-                  <div>Taipei,TW</div>
-                  <div>Front-end Engineer</div>
-                  <div>Jan 2019 – Jul 2020</div>
-                  <ul>
-                    <li>Served as the on-site engineer for the Information Department of Taipei’s City Government.
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="workExperience">
-                  <div>Self-employed</div>
-                  <div>Taipei,TW</div>
-                  <div>Freelance Web Developer</div>
-                  <div>Jan 2017 – Apr 2018</div>
-                  <ul>
-                    <li>Delivered web development projects using HTML, CSS, Javascript, and Wordpress.</li>
-                  </ul>
-                </div>
-
-                <div class="workExperience">
-                  <div>Siloah Travel Co., Ltd</div>
-                  <div>Taipei,TW</div>
-                  <div>Website Developer</div>
-                  <div>Apr 2016 – Nov 2016</div>
-                  <ul>
-                    <li>Planned and designed website using HTML, CSS, Javascript, and Wordpress.
-                    </li>
-                  </ul>
-                </div>
-
+              <div class="workExperience">
+                <div>Honghwa International Corp</div>
+                <div>Taipei,TW</div>
+                <div>Front-end Engineer</div>
+                <div>Jan 2019 – Jul 2020</div>
+                <ul>
+                  <li>Served as the on-site engineer for the Information Department of Taipei’s City Government.
+                  </li>
+                </ul>
               </div>
 
+              <div class="workExperience">
+                <div>Self-employed</div>
+                <div>Taipei,TW</div>
+                <div>Freelance Web Developer</div>
+                <div>Jan 2017 – Apr 2018</div>
+                <ul>
+                  <li>Delivered web development projects using HTML, CSS, Javascript, and Wordpress.</li>
+                </ul>
+              </div>
 
-
-
+              <div class="workExperience">
+                <div>Siloah Travel Co., Ltd</div>
+                <div>Taipei,TW</div>
+                <div>Website Developer</div>
+                <div>Apr 2016 – Nov 2016</div>
+                <ul>
+                  <li>Planned and designed website using HTML, CSS, Javascript, and Wordpress.
+                  </li>
+                </ul>
+              </div>
 
             </div>
+
+            <!-- <button title="read More" class="readMore hvr-underline-from-center" id="toggleBtn">
+                <img src="img/arrowDown.png" alt=" ">
+                Read More
+              </button> -->
+            <!-- <div id="content" class="close">
+            </div> -->
           </div>
 
         </div>
@@ -391,20 +387,24 @@
           <div class="machine__body__screen">
             <!-- Slideshow container -->
             <div class="slideshow-container">
-
+              <!-- Next and previous buttons -->
+              <button class="slideshow-container__btn left" onclick="plusSlides(-1)" aria-label="pre page"><i
+                  class="fa-solid fa-circle-chevron-left"></i></button>
               <!-- Full-width images with number and caption text -->
               <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
                 <div class="mySlides__info">
                   <h5 class="mySlides__info__title">work projects.</h5>
-                  <h6 class="mySlides__info__subTitle">Served as the on-site engineer for the Information Department of
-                    Taipei’s City Government.</h6>
-                  <p class="mySlides__info__date">Jul 2020-Present</p>
-                  <p>Use programming languages ​​and the official systems to build websites and use the following
-                    techniques to increase visual diversity, such as website planning, UX design,
-                    accessibility
-                    design, HTML, CSS, Sass, JavaScript, jQuery, Zeplin, Adobe XD.</p>
-                  <div class="mySlides__info__content small">
+                  <div class="mySlides__info__content big">
+                    <h6 class="mySlides__info__subTitle">Served as the on-site engineer for the Information Department
+                      of
+                      Taipei’s City Government.</h6>
+                    <p class="mySlides__info__date">Jul 2020-Present</p>
+                    <p>Use programming languages ​​and the official systems to build websites and use the following
+                      techniques to increase visual diversity, such as website planning, UX design,
+                      accessibility
+                      design, HTML, CSS, Sass, JavaScript, jQuery, Zeplin, Adobe XD.</p>
+
                     <p class="online">Online</p>
                     <ul>
                       <li>
@@ -547,16 +547,23 @@
 
               </div>
 
-
+              <button class="slideshow-container__btn right" onclick="plusSlides(1)" aria-label="next page"><i
+                  class="fa-solid fa-circle-chevron-right"></i></button>
+              <div class="slideshow-container__dotGroup">
+                <button class="dotGroup__dot" onclick="currentSlide(1)" aria-label="page 1"></button>
+                <button class="dotGroup__dot" onclick="currentSlide(2)" aria-label="page 2"></button>
+                <button class="dotGroup__dot" onclick="currentSlide(3)" aria-label="page 3"></button>
+              </div>
             </div>
 
           </div>
 
         </div>
         <div class="machine__footer">
-          <div class="mySlides__controller">
-            <!-- Next and previous buttons -->
-            <button class="prev" onclick="plusSlides(-1)" aria-label="pre"><i class="fa-solid fa-backward"></i></button>
+          <!-- <div class="mySlides__controller">
+
+            <button class="prev" onclick="plusSlides(-1)" aria-label="pre page"><i
+                class="fa-solid fa-caret-left"></i></button>
 
             <div class="dotGroup">
               <button class="dotGroup__dot" onclick="currentSlide(1)" aria-label="page 1"></button>
@@ -564,9 +571,10 @@
               <button class="dotGroup__dot" onclick="currentSlide(3)" aria-label="page 3"></button>
             </div>
 
-            <button class="next" onclick="plusSlides(1)" aria-label="next"><i class="fa-solid fa-forward"></i></button>
+            <button class="next" onclick="plusSlides(1)" aria-label="next page"><i
+                class="fa-solid fa-caret-right"></i></button>
 
-          </div>
+          </div> -->
 
         </div>
       </div>
