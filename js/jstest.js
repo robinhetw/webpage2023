@@ -172,14 +172,20 @@ function animate1() {
 }
 animate1();
 
-// slider
+// frame scene
 var scene = document.getElementById("scene");
 var parallaxInstance = new Parallax(scene, {
   relativeInput: true,
+  iosFix: true,
+  iosDisabled: true,
+  androidFix: true,
+  androidDisabled: true,
+  overScrollFix: true,
 });
 
 parallaxInstance.friction(0.2, 0.2);
 
+// slider
 let slideIndex = 1;
 showSlides(slideIndex);
 
