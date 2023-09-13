@@ -94,7 +94,7 @@ function animate() {
   let frameY = spriteAnimations[playerState].loc[position].y;
 
   ctx.save();
-  ctx.scale(1.3, 1.3);
+  ctx.scale(1.2, 1.2);
 
   ctx.drawImage(
     playerImage,
@@ -184,6 +184,14 @@ var parallaxInstance = new Parallax(scene, {
 });
 
 parallaxInstance.friction(0.2, 0.2);
+
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  parallaxInstance.disable();
+}
 
 // slider
 let slideIndex = 1;

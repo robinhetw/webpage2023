@@ -615,6 +615,13 @@ body.open .navigation-menu__labels {
     padding-top: 1.6rem; }
     .workExperience ul li {
       padding-bottom: 0.8rem; }
+  .workExperience__btn {
+    grid-column: 1/ 3;
+    text-align: center;
+    color: white; }
+    .workExperience__btn i {
+      font-size: 1.2rem;
+      margin-left: 4px; }
 
 button.readMore {
   border: none;
@@ -1036,7 +1043,8 @@ button.readMore {
     margin: 0 16px;
     border-top: none;
     border-bottom: none;
-    background-image: url(bg/pexels-philippe-donn-1169754.jpg); }
+    background-image: url(bg/pexels-philippe-donn-1169754.jpg);
+    position: relative; }
     .machine__body__screen {
       border-radius: 20px;
       overflow: hidden;
@@ -1066,16 +1074,16 @@ button.readMore {
     .slideshow-container__btn:hover {
       opacity: 1;
       box-shadow: #26394d 0px 20px 30px -10px; }
+    .slideshow-container__btn.right {
+      right: 8px; }
+    .slideshow-container__btn.left {
+      left: 8px; }
   .slideshow-container__dotGroup {
     position: absolute;
     bottom: 16px;
     left: 50%;
     z-index: 999;
     translate: -50%; }
-  .slideshow-container .right {
-    right: 18px; }
-  .slideshow-container .left {
-    left: 18px; }
 
 /* Hide the images by default */
 .mySlides {
@@ -1162,11 +1170,11 @@ button.readMore {
       .mySlides__info__content .offline,
       .mySlides__info__content .offline + ul {
         color: #999; }
-  .mySlides:nth-child(2) {
+  .mySlides:nth-child(1) {
     background-image: url(bg/bg__4.gif); }
-  .mySlides:nth-child(3) {
+  .mySlides:nth-child(2) {
     background-image: url(bg/bg_darksky.gif); }
-  .mySlides:nth-child(4) {
+  .mySlides:nth-child(3) {
     background-image: url(bg/bg__6.gif); }
   .mySlides__controller {
     position: relative;
@@ -1300,11 +1308,7 @@ button.readMore {
 
 @media only screen and (max-width: 700px) {
   .mySlides__info {
-    width: 76%; }
-  .slideshow-container .right {
-    right: 12px; }
-  .slideshow-container .left {
-    left: 12px; } }
+    width: 76%; } }
 
 @media only screen and (max-width: 680px) {
   .hero h2 {
@@ -1373,12 +1377,8 @@ button.readMore {
     border-top-right-radius: 0px; }
   .mySlides__info {
     width: 75%; }
-  .slideshow-container .left {
-    left: 6px; }
-  .slideshow-container .right {
-    right: 6px; }
   .numbertext {
-    padding: 8px; } }
+    padding: 10px; } }
 
 @media only screen and (max-width: 570px) {
   .frame {
@@ -1427,10 +1427,10 @@ button.readMore {
     line-height: 1.8rem; }
   .mySlides__info {
     width: 95%; }
-  .slideshow-container .left {
-    left: 2px; }
-  .slideshow-container .right {
-    right: 2px; } }
+  .slideshow-container__btn.left {
+    left: -4px; }
+  .slideshow-container__btn.right {
+    right: -4px; } }
 
 @media only screen and (max-width: 460px) {
   .machine__head__title {
@@ -1464,7 +1464,11 @@ button.readMore {
     width: 50px; }
   .machine__head, .machine__body, .machine__footer {
     border-width: 10px;
-    padding: 8px; } }
+    padding: 8px; }
+  .slideshow-container__btn.left {
+    left: -6px; }
+  .slideshow-container__btn.right {
+    right: -6px; } }
 
 @media only screen and (max-width: 400px) {
   .hero h2 {
