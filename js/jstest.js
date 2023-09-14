@@ -325,8 +325,8 @@ WaypointFadeIn("#wayPoint-6", function () {}, "95%", "1s");
 
 WaypointRIR("#waypoint-glasses", function () {}, "95%", "1s");
 
-var userAgent = navigator.userAgent.toLowerCase();
+// var userAgent = navigator.userAgent.toLowerCase();
 
-if (/iphone|ipad|ipod/.test(userAgent) && /safari/.test(userAgent)) {
-  $(".machine__head").css("background-attachment", "initial");
-}
+// if (/iphone|ipad|ipod/.test(userAgent) && /safari/.test(userAgent)) {
+//   $(".machine__head").css("background-attachment", "initial");
+// }
