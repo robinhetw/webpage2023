@@ -181,6 +181,8 @@ var parallaxInstance = new Parallax(scene, {
   androidFix: true,
   androidDisabled: true,
   overScrollFix: true,
+  relativeInput: true,
+  hoverOnly: true,
 });
 
 parallaxInstance.friction(0.2, 0.2);
