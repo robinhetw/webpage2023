@@ -324,3 +324,11 @@ WaypointFadeInRight("#wayPoint-5", function () {}, "95%", "1s");
 WaypointFadeIn("#wayPoint-6", function () {}, "95%", "1s");
 
 WaypointRIR("#waypoint-glasses", function () {}, "95%", "1s");
+
+document.addEventListener(
+  "touchmove",
+  function (e) {
+    e.preventDefault();
+  },
+  { passive: false }
+);
