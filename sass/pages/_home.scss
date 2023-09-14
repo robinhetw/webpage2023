@@ -616,12 +616,14 @@ button.readMore {
   &__body,
   &__footer {
     border: 20px double $color-tertiary-dark;
-    background-attachment: fixed;
+
     background-size: cover;
+    background-position: top center;
     position: relative;
     overflow: hidden;
     padding: 24px;
     box-shadow: $shadow;
+
     &::before {
       content: "";
       position: absolute;
@@ -643,6 +645,7 @@ button.readMore {
   &__head {
     text-align: center;
     background-image: url(bg/galaxy-3608029_1920.jpg);
+    background-attachment: fixed;
     padding: 24px 40px;
     &__img {
       width: 70px;
