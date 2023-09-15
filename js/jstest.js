@@ -331,3 +331,39 @@ var userAgent_1 = navigator.userAgent.toLowerCase();
 if (/iphone|ipad|ipod/.test(userAgent_1) && /safari/.test(userAgent_1)) {
   $(".machine__head").css("background-attachment", "initial");
 }
+// 倒數
+// let loadEle = document.getElementById("loaderContent");
+
+// setTimeout(() => {
+//   document.addEventListener("wheel", disableScroll);
+// }, 0);
+
+// setTimeout(() => {
+//   loadEle.style.display = "none";
+//   document.removeEventListener("wheel", disableScroll);
+// }, 2000);
+
+// // 禁用滾輪事件的回調函數
+// function disableScroll(event) {
+//   event.preventDefault();
+// }
+
+let loadEle = document.getElementById("loaderContent");
+
+setTimeout(() => {
+  if (loadEle) {
+    document.addEventListener("wheel", disableScroll, { passive: false });
+  }
+}, 0);
+
+setTimeout(() => {
+  if (loadEle) {
+    document.removeEventListener("wheel", disableScroll);
+    loadEle.style.display = "none";
+  }
+}, 2000);
+
+// 禁用滾輪事件的回調函數
+function disableScroll(event) {
+  event.preventDefault();
+}

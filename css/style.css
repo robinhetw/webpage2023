@@ -1275,6 +1275,17 @@ button.readMore {
 .dotGroup__dot:hover {
   background: #e5dc15; }
 
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+
 #loaderContent {
   position: fixed;
   top: 0;
@@ -1319,8 +1330,7 @@ button.readMore {
   0% {
     opacity: 1; }
   100% {
-    opacity: 0;
-    display: none; } }
+    opacity: 0; } }
 
 /* 平板  */
 @media only screen and (max-width: 1024px) {
