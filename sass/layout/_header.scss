@@ -165,13 +165,13 @@ h3 {
     margin-left: 10px;
     translate: 0px -2px;
   }
-  &--primary {
-    background-color: #0e0788;
-    @include lvl2(#0e0788, white);
-  }
   &--sub {
-    background: #ff9936;
-    @include lvl2(#ff9936, white);
+    background-color: $color-tertiary-light;
+    @include lvl2($color-tertiary-light, white);
+  }
+  &--primary {
+    background: $color-secondary-dark;
+    @include lvl2($color-secondary-dark, white);
   }
   &--primary:hover,
   &--sub:hover {

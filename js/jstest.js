@@ -311,7 +311,7 @@ function WaypointRIR(selector, callback, offset, duration) {
   });
 }
 
-WaypointFadeIn(".wayPoint-1", function () {}, "95%", "1s");
+// WaypointFadeIn(".wayPoint-1", function () {}, "95%", "1s");
 
 WaypointFadeInLeft("#wayPoint-2", function () {}, "95%", "1s");
 
@@ -325,6 +325,7 @@ WaypointFadeIn("#wayPoint-6", function () {}, "95%", "1s");
 
 WaypointRIR("#waypoint-glasses", function () {}, "95%", "1s");
 
+// Iphone Ipad style
 var userAgent_1 = navigator.userAgent.toLowerCase();
 
 if (/iphone|ipad|ipod/.test(userAgent_1) && /safari/.test(userAgent_1)) {

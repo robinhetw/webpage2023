@@ -42,7 +42,8 @@
 </head>
 
 <body>
-
+  <div id="loaderContent"><span class="loader"></span>
+  </div>
   <header class="header contentGap">
 
     <nav class="navigation-menu">
@@ -66,7 +67,7 @@
 
 
 
-    <div class="frame hidden wayPoint-1" id="scene">
+    <div class="frame wayPoint-1" id="scene">
       <div class="layer" data-depth="0.1">
         <img src="img/sky.png" alt="" class="sky">
       </div>
@@ -102,14 +103,14 @@
       </div>
 
       <div class="layer" data-depth="0.2">
-        <img src="img/ground-2.png" alt=" " class="ground">
+        <img src="img/ground-2.png" alt="" class="ground">
       </div>
       <div class="layer" data-depth="0.1">
         <img src="img/mountain.png" alt="" class="ground ground__2">
       </div>
 
       <div class="layer" data-depth="0.05">
-        <img src="img/ground-1.png" alt=" " class="ground">
+        <img src="img/ground-1.png" alt="" class="ground">
       </div>
 
 
@@ -188,29 +189,37 @@
                 <div>Front-end Engineer</div>
                 <div>Jul 2020-Present</div>
                 <ul>
-                  <li>Served same position with the last company as an on-site engineer for Taipei City Government's
-                    Information Department,
-                    assisting in
-                    setting up websites for various bureaus and departments such as Taipei Zoo, Department of Social
-                    Welfare, Department of Rapid Transit Systems, Department of Health, Department of Urban Development,
-                    and Research, Development, and Evaluation Commission.
-                  </li>
-
-
-                  <li>Created and designed reusable visual components with HTML5/CSS3/Sass and responsive layouts for
-                    the TaipeiPass app. Also, responsible for website maintenance, enhancing user experience and
-                    accessibility features.
-                  </li>
-
-                  <li>
-
-                    Improved the accessibility testing process of the Taipei City Government and Information Department
+                  <li>Improved the accessibility testing process of the Taipei City Government and Information
+                    Department
                     websites, resulting in increased improvement rates and reduced process time. Collaborated with UI/UX
                     designers using Zeplin, Adobe XD, and Figma for website wireframes and prototypes.
                   </li>
+                  <li>Created and designed reusable visual components with HTML5/CSS3/Sass and responsive layouts for
+                    the TaipeiPass app. Also, responsible for website maintenance, enhancing user experience and
+                    accessibility features.</li>
+                  <li>Continued to serve as an on-site engineer for the Taipei Government IT Department, assisting in
+                    setting up websites for 6+ departments.</li>
+                  <li>
+                    <div class="FeaturedWorks">
+                      <h4>Featured projects</h4>
+                      <ul>
+                        <li> <a href="https://housingjustice.gov.taipei/" class="workExperience__btn" target="_blank"
+                            rel="noopener noreferrer" title="Housing Justice Office official website[Mandarin]">Housing
+                            Justice
+                            Office official website<i class="fa-solid fa-link"></i></a></li>
+                        <li><a href="https://dome.gov.taipei/" class="workExperience__btn" target="_blank"
+                            rel="noopener noreferrer" title="Taipei Dome
+                            Office official website[Mandarin]">Taipei Dome Office official website<i
+                              class="fa-solid fa-link"></i></a></li>
+                        <li><a href="https://id.taipei/tpcd/" class="workExperience__btn" target="_blank"
+                            rel="noopener noreferrer" title="TaipeiPass official website[Mandarin]">TaipeiPass app's
+                            components <i class="fa-solid fa-link"></i></a></li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
-                <a href="#scroll_projects" class="workExperience__btn" title="my work projects">check my work
-                  projects <i class="fa-solid fa-right-long"></i></a>
+                <a href="#scroll_projects" class="workExperience__btn" title="more projects">check more projects <i
+                    class="fa-solid fa-right-long"></i></a>
               </div>
               <div class="workExperience">
                 <div>Honghwa International Corp</div>
@@ -261,7 +270,7 @@
     <!-- first section -->
     <div class="blockArt hidden" id="wayPoint-3">
       <canvas id="canvas2" class="blockArt__canvas"></canvas>
-      <img src="img/run.gif" class="blockArt__canvas--run">
+      <img src="img/run.gif" class="blockArt__canvas--run" alt="">
     </div>
 
     <div class="myRecommender hidden wayPoint-4" id="scroll_references">
@@ -411,21 +420,22 @@
                     <ul>
                       <li>
                         <a href="https://id.taipei/tpcd/" target="_blank" rel="noopener noreferrer"
-                          title="TaipeiPass[Mandarin]">TaipeiPass</a> application website page interface and components
+                          title="TaipeiPass official website[Mandarin]">TaipeiPass app's components<i
+                            class="fa-solid fa-link"></i></a>
                       </li>
                       <li><a href="https://dome.gov.taipei/" target="_blank" rel="noopener noreferrer"
                           title="Taipei Dome Office official website[Mandarin]">Taipei
-                          Dome Office official website</a></li>
+                          Dome Office official website<i class="fa-solid fa-link"></i></a></li>
                       <li><a href="https://housingjustice.gov.taipei/" target="_blank" rel="noopener noreferrer"
                           title="Housing Justice Office official website[Mandarin]">Housing Justice Office official
-                          website</a></li>
+                          website<i class="fa-solid fa-link"></i></a></li>
 
                       <li><a href="https://webconference.gov.taipei/" target="_blank" rel="noopener noreferrer"
                           title="Remote Office official website[Mandarin]">Remote
-                          Office official website</a></li>
+                          Office official website<i class="fa-solid fa-link"></i></a></li>
                       <li><a href="https://civil.gov.taipei/" target="_blank" rel="noopener noreferrer"
                           title="Taipei Civic Participation official website[Mandarin]">Taipei Civic Participation
-                          official website</a>
+                          official website<i class="fa-solid fa-link"></i></a>
                       </li>
                       <li>Taipei City Government Remote Office VPN System official website - UI/UX design</li>
                       <li>GEAF official website</li>
@@ -459,7 +469,7 @@
                         target="_blank" rel="noopener noreferrer"
                         title="Adult children psychological test[Mandarin]">Adult children
                         psychological
-                        test</a>
+                        test<i class="fa-solid fa-link"></i></a>
                     </h6>
                     <p class="mySlides__info__subTitle__content">It's a psychometric test for emotionally immature
                       parents
@@ -467,28 +477,28 @@
 
                     <h6 class="mySlides__info__subTitle">
                       <a href="https://robinhetw.github.io/quickQuestion/index.html" target="_blank"
-                        rel="noopener noreferrer" title="Quick Quiz">Quick Quiz</a>
+                        rel="noopener noreferrer" title="Quick Quiz">Quick Quiz<i class="fa-solid fa-link"></i></a>
                     </h6>
                     <p class="mySlides__info__subTitle__content">A quiz game using HTML, CSS, Sass, JavaScript and
                       connecting
                       with TriviaAPI.</p>
                     <h6 class="mySlides__info__subTitle">
                       <a href="https://robinhetw.github.io/iiiproject/" target="_blank" rel="noopener noreferrer"
-                        title=" Town Tongue Design">Town Tongue Design</a>
+                        title=" Town Tongue Design">Town Tongue Design<i class="fa-solid fa-link"></i></a>
                     </h6>
                     <p class="mySlides__info__subTitle__content">The official website was jointly developed and still in
                       production, using HTML, CSS, Sass, JavaScript and jQuery.</p>
 
                     <h6 class="mySlides__info__subTitle">
                       <a href="https://robinhetw.github.io/Tip-calculator/" target="_blank" rel="noopener noreferrer"
-                        title="Tip Calculator">Tip Calculator</a>
+                        title="Tip Calculator">Tip Calculator<i class="fa-solid fa-link"></i></a>
                     </h6>
                     <p class="mySlides__info__subTitle__content">It's a tip calculator, using HTML, CSS, Sass,
                       JavaScript and angular.</p>
 
                     <h6 class="mySlides__info__subTitle">
                       <a href="https://robinhetw.github.io/Pig-Game-Vision-2-/" target="_blank"
-                        rel="noopener noreferrer" title="Pig Game">Pig Game</a>
+                        rel="noopener noreferrer" title="Pig Game">Pig Game<i class="fa-solid fa-link"></i></a>
                     </h6>
                     <p class="mySlides__info__subTitle__content">It's a dice game, using HTML, CSS, Sass,
                       JavaScript and angular.</p>
@@ -496,15 +506,15 @@
 
                     <h6 class="mySlides__info__subTitle">
                       <a href="https://robinhetw.github.io/hiker2/" target="_blank" rel="noopener noreferrer"
-                        title="Hiker official website">Hiker official website</a>
+                        title="Hiker official website">Hiker official website<i class="fa-solid fa-link"></i></a>
                     </h6>
                     <h6 class="mySlides__info__subTitle">
                       <a href="https://robinhetw.github.io/Natours/" target="_blank" rel="noopener noreferrer"
-                        title="Natours official website">Natours official website</a>
+                        title="Natours official website">Natours official website<i class="fa-solid fa-link"></i></a>
                     </h6>
                     <h6 class="mySlides__info__subTitle">
                       <a href="https://robinhetw.github.io/Omnifood/" target="_blank" rel="noopener noreferrer"
-                        title="Omnifood official website">Omnifood official website</a>
+                        title="Omnifood official website">Omnifood official website<i class="fa-solid fa-link"></i></a>
                     </h6>
                     <p class="mySlides__info__subTitle__content">These are fictitious branded company websites , using
                       HTML,
@@ -591,8 +601,8 @@
   <footer class="footer">
     <div class="container">
       <p class="footer__text">Copyright © 2023 by Chen Wei He. All rights reserved.<br><a
-          href="https://www.linkedin.com/in/chen-wei-he-910806b7" class="" title="Contact me on Linkedin"
-          target="_blank" rel="noopener noreferrer">Contact me on<i class="fa-brands fa-linkedin"></i></a></p>
+          href="https://www.linkedin.com/in/chen-wei-he-910806b7" title="Contact me on Linkedin" target="_blank"
+          rel="noopener noreferrer">Contact me on<i class="fa-brands fa-linkedin"></i></a></p>
 
     </div>
   </footer>

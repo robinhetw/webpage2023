@@ -276,13 +276,13 @@ h3 {
   .btn i {
     margin-left: 10px;
     translate: 0px -2px; }
-  .btn--primary {
+  .btn--sub {
     background-color: #0e0788;
     box-shadow: 4px 0 #0e0788, -4px 0 #0e0788, 0 -4px #0e0788, 0 4px #0e0788, 8px 0 white, -8px 0 white, 0 -8px white, 0 8px white, 0 0 0 4px white;
     margin: 8px auto; }
-  .btn--sub {
-    background: #ff9936;
-    box-shadow: 4px 0 #ff9936, -4px 0 #ff9936, 0 -4px #ff9936, 0 4px #ff9936, 8px 0 white, -8px 0 white, 0 -8px white, 0 8px white, 0 0 0 4px white;
+  .btn--primary {
+    background: #c8400a;
+    box-shadow: 4px 0 #c8400a, -4px 0 #c8400a, 0 -4px #c8400a, 0 4px #c8400a, 8px 0 white, -8px 0 white, 0 -8px white, 0 8px white, 0 0 0 4px white;
     margin: 8px auto; }
   .btn--primary:hover, .btn--sub:hover {
     background-color: #822a15;
@@ -365,17 +365,17 @@ h3 {
   .footer__text {
     text-align: center;
     color: #999;
-    font-size: 1rem;
-    font-family: "Press Start 2P", cursive;
+    font-size: 1.6rem;
     line-height: 1.5rem;
     transition: all 0.3s; }
     .footer__text a {
-      color: inherit; }
+      display: inline-block;
+      color: inherit;
+      padding-top: 12px; }
       .footer__text a i {
-        translate: 0px -2px;
         margin-left: 10px; }
       .footer__text a:hover {
-        text-decoration: none; }
+        color: #822a15; }
 
 @media only screen and (max-width: 768px) {
   .sticky .navigation-menu {
@@ -620,8 +620,17 @@ body.open .navigation-menu__labels {
     text-align: center;
     color: white; }
     .workExperience__btn i {
-      font-size: 1.2rem;
+      font-size: 0.8rem;
       margin-left: 4px; }
+
+.FeaturedWorks h4 {
+  margin-block-start: 0px;
+  margin-block-end: 8px; }
+
+.FeaturedWorks ul {
+  padding-top: 0; }
+  .FeaturedWorks ul li {
+    font-weight: normal; }
 
 button.readMore {
   border: none;
@@ -1119,7 +1128,7 @@ button.readMore {
       margin-bottom: 0px; }
       .mySlides__info__subTitle__content {
         margin-top: 8px;
-        margin-bottom: 24px; }
+        margin-bottom: 18px; }
       .mySlides__info__subTitle a {
         color: white; }
     .mySlides__info__img {
@@ -1135,7 +1144,7 @@ button.readMore {
     .mySlides__info__content.small {
       max-height: 130px; }
     .mySlides__info__content.big {
-      max-height: 360px; }
+      max-height: 340px; }
     .mySlides__info__content {
       overflow-y: scroll;
       padding-right: 12px;
@@ -1160,11 +1169,14 @@ button.readMore {
         background: #555; }
       .mySlides__info__content a {
         color: #fff; }
+        .mySlides__info__content a i {
+          font-size: 0.8rem;
+          margin-left: 4px; }
       .mySlides__info__content ul {
         padding-inline-start: 20px;
         margin-block-start: 0px; }
         .mySlides__info__content ul li:not(:last-child) {
-          padding-bottom: 2px; }
+          padding-bottom: 4px; }
       .mySlides__info__content .online,
       .mySlides__info__content .offline {
         font-weight: bold;
@@ -1263,16 +1275,52 @@ button.readMore {
 .dotGroup__dot:hover {
   background: #e5dc15; }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s; }
+#loaderContent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999999;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 2s ease-in forwards; }
 
-@keyframes fade {
-  from {
-    opacity: 0.4; }
-  to {
-    opacity: 1; } }
+.loader {
+  display: inline-block;
+  transform: translateZ(1px);
+  animation: fadeOut 2s ease-in forwards; }
+
+.loader:after {
+  content: "";
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin: 8px;
+  border-radius: 50%;
+  background: #fff;
+  animation: coin-flip 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite; }
+
+@keyframes coin-flip {
+  0%,
+  100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5); }
+  0% {
+    transform: rotateY(0deg); }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1); }
+  100% {
+    transform: rotateY(3600deg); } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    display: none; } }
 
 /* 平板  */
 @media only screen and (max-width: 1024px) {
